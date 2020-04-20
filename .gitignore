@@ -8,6 +8,5 @@
 # Ignore all logfiles and tempfiles
 /log/*
 !/log/.keep
+/log/*.log
 /tmp
-
-node_modules
