@@ -5,7 +5,7 @@ import squareTopLakes from '../pictures/squareTopLakes.jpeg'
 import sunset from '../pictures/sunset.jpeg'
 import londonTower from '../pictures/londonTower.jpeg'
 
-export default class CarouselContainer extends React.Component {
+export default class CustomCarousel extends React.Component {
 	render() {
 		return (
 			<div style={{ background: 'lightgray' }}>

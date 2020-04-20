@@ -1,6 +1,6 @@
 import React from 'react'
 // import Counter from '../components/counter/Counter'
-import CarouselContainer from '../containers/CarouselContainer'
+import Carousel from '../components/Carousel'
 import Bio from '../components/bio/Bio'
 
 export default class HomeContainer extends React.Component {
@@ -9,7 +9,7 @@ export default class HomeContainer extends React.Component {
 			<div>
 				<Bio />
 				{/* <Counter /> */}
-				<CarouselContainer />
+				<Carousel />
 			</div>
 		)
 	}
