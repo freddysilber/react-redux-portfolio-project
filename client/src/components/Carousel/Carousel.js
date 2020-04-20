@@ -4,7 +4,6 @@ import squareTopLakes from '../../pictures/squareTopLakes.jpeg'
 import sunset from '../../pictures/sunset.jpeg'
 import londonTower from '../../pictures/londonTower.jpeg'
 import crestedButte from '../../pictures/crestedButte.jpeg'
-import './Carousel.css'
 
 export default class CustomCarousel extends React.Component {
 	render() {
