@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import './Counter.css' // css for this component
 
 class Counter extends React.Component {
 	handleIncrement = event => {
@@ -13,7 +14,7 @@ class Counter extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="counter">
 				<p>Counter</p>
 				<button onClick={this.handleIncrement}>Click me +</button>
 				<button onClick={this.handleDecrement}>Click me -</button>

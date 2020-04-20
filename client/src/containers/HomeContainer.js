@@ -1,5 +1,5 @@
 import React from 'react'
-import Counter from '../components/Counter'
+import Counter from '../components/counter/Counter'
 import Bio from '../components/Bio'
 
 export default class HomeContainer extends React.Component {
