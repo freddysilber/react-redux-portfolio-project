@@ -2,14 +2,14 @@ import React from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
-import profilePic from './profileMonopoly.jpeg'
+import profilePic from '../../pictures/profileMonopoly.jpeg'
 import './Bio.css'
 
 const Bio = () => {
 	const cloudcoachurl = () => <a href="https://cloudcoach.com/" target="_blank" style={{ color: '#FF9000' }}>Cloud Coach</a>
 
 	return (
-		<Jumbotron fluid style={{ background: '#323C39', margin: '1rem', padding: '2rem' }}>
+		<Jumbotron fluid style={{ background: '#323C39', marginBottom: '0' }}>
 			<div className="content">
 				<Col xs={6} md={4}>
 					<Image src={profilePic} roundedCircle height="400" />
