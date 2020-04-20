@@ -1,6 +1,6 @@
 import React from 'react'
 // import Counter from '../components/counter/Counter'
-import Carousel from '../components/Carousel'
+import Carousel from '../components/Carousel/Carousel'
 import Bio from '../components/bio/Bio'
 
 export default class HomeContainer extends React.Component {
