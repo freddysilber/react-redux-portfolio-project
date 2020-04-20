@@ -2,8 +2,12 @@
 	margin: 0rem 5rem;
 }
 
-p {
+p, h4 {
 	color: #8BDDCA;
+}
+
+h4 {
+	font-weight: bolder;
 }
 
 .content {

@@ -6,6 +6,8 @@ import profilePic from './profileMonopoly.jpeg'
 import './Bio.css'
 
 const Bio = () => {
+	const cloudcoachurl = () => <a href="https://cloudcoach.com/" target="_blank" style={{ color: '#FF9000' }}>Cloud Coach</a>
+
 	return (
 		<Jumbotron fluid style={{ background: '#323C39', margin: '1rem', padding: '2rem' }}>
 			<div className="content">
@@ -13,7 +15,7 @@ const Bio = () => {
 					<Image src={profilePic} roundedCircle height="400" />
 				</Col>
 				<div className="bio">
-					<p>Hello and welcome to my portfolio site!</p>
+					<h4>Hello and welcome to my portfolio site!</h4>
 					<p>
 						My Name is Freddy Silber and I am a full stack web developer.
 						I was born in 1999 and grew up in a small mountain town called Fraser in the state of Colorado.
@@ -25,8 +27,8 @@ const Bio = () => {
 						with some of my friends. We would do all kinds of things from creating claymation films, 3D printing, programming 3D printers, video games, and our attemps to hack other computer programs.
 					</p>
 					<p>
-						Shortly after I graduated high school, I landed a job with a company called Cloud Coach and started learning basic programming skills on the Salesforce.com CRM platform.
-						Now I am a developer for Cloud Coach and spend my time assisting our clients with custom UI's, automation, and implementations as well as manage a few component libraries,
+						Shortly after I graduated high school, I landed a job with a company called {cloudcoachurl()} and started learning basic programming skills on the Salesforce.com CRM platform.
+						Now I am a developer for {cloudcoachurl()}  and spend my time assisting our clients with custom UI's, automation, and implementations as well as manage a few component libraries,
 						optimize code, maintain consistant data, and invent my own workflows, apps, and UI's.
 					</p>
 				</div>
