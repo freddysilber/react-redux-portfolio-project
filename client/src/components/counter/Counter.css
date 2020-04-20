@@ -1,3 +1,7 @@
 .counter {
 	margin: 4rem;
+	border: 1px solid dodgerblue;
+	border-radius: 5px;
+	padding: .25rem;
+	text-align: center;
 }
