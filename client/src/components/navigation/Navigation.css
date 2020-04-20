@@ -1,3 +1,9 @@
 .navigation {
-	border-bottom: 10px solid lavender;
+	border-bottom: 10px solid #24A286;
+	background-color: #FBA637;
+}
+
+.navLink, .navLink:hover {
+	color: #32373B;
+	text-decoration: none;
 }
