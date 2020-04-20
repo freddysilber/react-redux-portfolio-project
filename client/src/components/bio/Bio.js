@@ -1,6 +1,5 @@
 import React from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import profilePic from '../../pictures/profileMonopoly.jpeg'
 import './Bio.css'
@@ -11,9 +10,15 @@ const Bio = () => {
 	return (
 		<Jumbotron fluid style={{ background: '#323C39', marginBottom: '0', padding: '1.5rem' }}>
 			<div className="content">
-				<Col xs={6} md={4}>
-					<Image src={profilePic} rounded height="400" />
-				</Col>
+				<Image src={profilePic} rounded height="400" />
+				<ul>
+					<i class="fab fa-twitter fa-lg" style={{ color: '#1DA1F2' }}></i>
+					<i class="fab fa-facebook fa-lg" style={{ color: '#4267B2' }}></i>
+					<i class="fab fa-instagram fa-lg" style={{ color: '#C13584' }}></i>
+					<i class="fab fa-github fa-lg" style={{ color: 'white' }}></i>
+					<i class="fab fa-linkedin fa-lg" style={{ color: '#2867B2' }}></i>
+					<i class="fab fa-youtube fa-lg" style={{ color: '#FF0000' }}></i>
+				</ul>
 				<div className="bio">
 					<h4>Hello and welcome to my portfolio site!</h4>
 					<p>
