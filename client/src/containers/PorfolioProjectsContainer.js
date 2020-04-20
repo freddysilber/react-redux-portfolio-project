@@ -20,7 +20,11 @@ class PortfolioProjectContainer extends React.Component {
 
 	handleLoading = () => {
 		if (this.props.loading) {
-			return <Spinner animation="border" variant="dark" />
+			return (
+				<div style={{ top: '50%', left: '50%', position: 'fixed' }}>
+					<Spinner animation="border" variant="dark" />
+				</div>
+			)
 		} else {
 			return <RepositoryList repositories={this.props.repositories} />
 		}
