@@ -11,6 +11,7 @@ export const githubReducer = (state = {
 			}
 
 		case 'ADD_GITHUB_DATA':
+			console.log(action.repositories)
 			return {
 				...state,
 				repositories: action.repositories,

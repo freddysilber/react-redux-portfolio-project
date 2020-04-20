@@ -12,7 +12,7 @@ const Bio = () => {
 		<Jumbotron fluid style={{ background: '#323C39', marginBottom: '0', padding: '1.5rem' }}>
 			<div className="content">
 				<Col xs={6} md={4}>
-					<Image src={profilePic} roundedCircle height="400" />
+					<Image src={profilePic} rounded height="400" />
 				</Col>
 				<div className="bio">
 					<h4>Hello and welcome to my portfolio site!</h4>
