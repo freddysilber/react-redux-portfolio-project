@@ -9,7 +9,7 @@ const Bio = () => {
 	const cloudcoachurl = () => <a href="https://cloudcoach.com/" target="_blank" style={{ color: '#FF9000' }}>Cloud Coach</a>
 
 	return (
-		<Jumbotron fluid style={{ background: '#323C39', marginBottom: '0' }}>
+		<Jumbotron fluid style={{ background: '#323C39', marginBottom: '0', padding: '1.5rem' }}>
 			<div className="content">
 				<Col xs={6} md={4}>
 					<Image src={profilePic} roundedCircle height="400" />

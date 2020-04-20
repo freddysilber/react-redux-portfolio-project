@@ -1,9 +1,9 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import squareTopLakes from '../../pictures/squareTopLakes.jpeg'
-import sunset from '../../pictures/sunset.jpeg'
-import londonTower from '../../pictures/londonTower.jpeg'
-import crestedButte from '../../pictures/crestedButte.jpeg'
+import squareTopLakes from '../pictures/squareTopLakes.jpeg'
+import sunset from '../pictures/sunset.jpeg'
+import londonTower from '../pictures/londonTower.jpeg'
+import crestedButte from '../pictures/crestedButte.jpeg'
 
 export default class CustomCarousel extends React.Component {
 	render() {
