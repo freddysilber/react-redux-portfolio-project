@@ -13,14 +13,3 @@ h4 {
 .content {
 	display: flex;
 }
-
-i {
-	margin: 1.5rem 0rem;
-	transition: .3s;
-}
-
-i:hover {
-	opacity: .7;
-	transition: .3s;
-	transform: scale(1.3);
-}

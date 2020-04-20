@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+i {
+	margin: 1.5rem 0rem;
+	transition: .3s;
+}
+
+i:hover {
+	opacity: .7;
+	transition: .3s;
+	transform: scale(1.3);
+}
+
+/* Font awesome icon colors (social media icons) */
+.twitterIcon {
+  color: #1DA1F2;
+}
+.facebookIcon {
+  color: #4267B2;
+}
+.instagramIcon {
+  color: #C13584;
+}
+.githubIcon {
+  color: white
+}
+linkedinIcon {
+  color: #2867B2;
+}
+.youtubeIcon {
+  color: #FF0000;
+}
