@@ -66,6 +66,7 @@ linkedinIcon {
 .navigation {
 	border-bottom: 2px solid #90BDDC;
 	background-color: #0A7FD2;
+	font-family: BalooTamma2;
 }
 
 .navLink, .navLink:hover {
@@ -89,4 +90,9 @@ h4 {
 .content {
 	display: flex;
 	font-family: DramaSans;
+}
+
+/* Carousel Css */
+.carouselContainer {
+	font-family: BalooTamma2;
 }
