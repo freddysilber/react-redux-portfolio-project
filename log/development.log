@@ -4736,3 +4736,67 @@ Processing by UsersController#index as */*
 Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1106)
 
 
+Started GET "/api/users" for 127.0.0.1 at 2020-04-21 16:49:21 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 0.9ms | Allocations: 5128)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-21 17:00:54 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1135)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-21 17:02:19 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1123)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2020-04-21 17:02:30 -0600
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"guy", "password"=>"[FILTERED]", "user"=>{"username"=>"guy", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "guy"], ["password", "pal"], ["created_at", "2020-04-21 23:02:30.468937"], ["updated_at", "2020-04-21 23:02:30.468937"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 1.3ms | Allocations: 2409)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-21 17:02:46 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.4ms | Allocations: 1227)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-21 17:03:01 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 1210)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-21 17:03:02 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 1210)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-21 17:03:05 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.4ms | Allocations: 1212)
+
+

@@ -22,28 +22,12 @@ class CreateUser extends React.Component {
 
 	handleSubmit = event => {
 		event.preventDefault()
-		// fetch('api/users', {
-		// 	method: 'POST',
-		// 	headers: {
-		// 		'Content-Type': 'application/json'
-		// 	},
-		// 	body: JSON.stringify({
-		// 		'username': this.state.username,
-		// 		'password': this.state.password
-		// 	})
-		// })
-		// 	.then(response => console.log(response.json()))
-		// 	// .then(response => response.json())
-		// 	// .then(data => dispatch({ type: 'ADD_USERS', users: data }))
-		// 	.catch(error => console.error(error))
-		createUser(this.state.username, this.state.password)
-
+		this.props.createUser(this.state.username, this.state.password)
 		this.setState({
 			username: '',
 			password: ''
 		})
 	}
-
 
 	render() {
 		return (
