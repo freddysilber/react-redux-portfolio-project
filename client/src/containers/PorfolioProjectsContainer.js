@@ -1,6 +1,6 @@
 import React from 'react'
 import Spinner from 'react-bootstrap/Spinner'
-import RepositoryList from '../components/repositorylist/RepositoryList'
+import RepositoryList from '../components/RepositoryList'
 import { connect } from 'react-redux'
 import { fetchRepositories } from '../actions/githubActions'
 

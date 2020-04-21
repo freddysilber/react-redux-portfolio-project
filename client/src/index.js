@@ -9,6 +9,7 @@ import rootReducer from './reducers/rootReducer'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './fonts/DramaSans.ttf'
+import './fonts/BalooTamma2-Regular.ttf'
 
 const store = createStore(
   rootReducer,

@@ -3,9 +3,14 @@
   src: local('DramaSans'), url(./fonts/DramaSans.ttf) format('truetype')
 }
 
+@font-face {
+	font-family: 'BalooTamma2';
+	src: local('BalooTamma2-Regular'),url(./fonts/BalooTamma2-Regular.ttf) format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'DramaSans', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'DramaSans', 'BalooTamma2', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -51,4 +56,37 @@ linkedinIcon {
 
 .cardItem {
 	margin: .25rem;
+}
+
+/* h3, p {
+	font-family: BalooTamma2;
+} */
+
+/* Navigation Css */
+.navigation {
+	border-bottom: 2px solid #90BDDC;
+	background-color: #0A7FD2;
+}
+
+.navLink, .navLink:hover {
+	color: #32373B;
+	text-decoration: none;
+}
+
+/* Bio Css */
+.bio {
+	margin: 0rem 1rem;
+}
+
+p, h4 {
+	color: #8BDDCA;
+}
+
+h4 {
+	font-weight: bolder;
+}
+
+.content {
+	display: flex;
+	font-family: DramaSans;
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-import SocialMediaIcons from '../../components/SocialMediaIcons'
+import SocialMediaIcons from './SocialMediaIcons'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Image from 'react-bootstrap/Image'
-import cloudcoach from '../../pictures/cloudcoach.jpg'
-import './Bio.css'
+import cloudcoach from '../pictures/cloudcoach.jpg'
+// import './Bio.css'
 
 const Bio = () => {
 	const cloudcoachurl = () => <a href="https://cloudcoach.com/" target="_blank" style={{ color: '#FF9000' }}>Cloud Coach</a>
