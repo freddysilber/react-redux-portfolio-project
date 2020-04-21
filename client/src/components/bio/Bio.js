@@ -2,7 +2,8 @@ import React from 'react'
 import SocialMediaIcons from '../../components/SocialMediaIcons'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Image from 'react-bootstrap/Image'
-import profilePic from '../../pictures/profileMonopoly.jpeg'
+// import profilePic from '../../pictures/profileMonopoly.jpeg'
+import selfie from '../../pictures/selfie.jpg'
 import './Bio.css'
 
 const Bio = () => {
@@ -11,7 +12,7 @@ const Bio = () => {
 	return (
 		<Jumbotron fluid style={{ background: '#323C39', marginBottom: '0', padding: '1.5rem' }}>
 			<div className="content">
-				<Image src={profilePic} rounded height="400" />
+				<Image src={selfie} rounded height="400" />
 				<SocialMediaIcons />
 				<div className="bio">
 					<h4>Hello and welcome to my portfolio site!</h4>
