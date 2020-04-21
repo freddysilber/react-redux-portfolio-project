@@ -11,17 +11,17 @@ export default class CustomCarousel extends React.Component {
 			<div style={{ background: 'lightgray' }}>
 				<Carousel>
 					<Carousel.Item>
-						<img className="d-block w-100" height="300" src={squareTopLakes} />
-						<Carousel.Caption>
-							<h3>Square Top Lakes</h3>
-							<p>In the summer, I hike sometimes...</p>
-						</Carousel.Caption>
-					</Carousel.Item>
-					<Carousel.Item>
 						<img className="d-block w-100" height="300" src={sunset} />
 						<Carousel.Caption>
 							<h3>Sunset in Seattle</h3>
 							<p>The only perk to weddings is traveling</p>
+						</Carousel.Caption>
+					</Carousel.Item>
+					<Carousel.Item>
+						<img className="d-block w-100" height="300" src={squareTopLakes} />
+						<Carousel.Caption>
+							<h3>Square Top Lakes</h3>
+							<p>In the summer, I hike sometimes...</p>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
