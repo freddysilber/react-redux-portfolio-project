@@ -1,16 +1,17 @@
 import React from 'react'
+import { socialMediaUrls } from '../data/util'
 
-export default class SocialMediaIcons extends React.Component {
-	render() {
-		return (
-			<ul>
-				<i class="fab fa-twitter fa-lg twitterIcon"></i>
-				<i class="fab fa-facebook fa-lg facebookIcon"></i>
-				<i class="fab fa-instagram fa-lg instagramIcon"></i>
-				<i class="fab fa-github fa-lg githubIcon"></i>
-				<i class="fab fa-linkedin fa-lg linkedinIcon"></i>
-				<i class="fab fa-youtube fa-lg youtubeIcon"></i>
-			</ul>
-		)
-	}
+const SocialMediaIcons = () => {
+	return (
+		<ul className="socialMediaIconList">
+			<a href={socialMediaUrls.twitter} target="_blank"><i class="fab fa-twitter fa-lg twitterIcon"></i></a>
+			<a href={socialMediaUrls.facebook} target="_blank"><i class="fab fa-facebook fa-lg facebookIcon"></i></a>
+			<a href={socialMediaUrls.instagram} target="_blank"><i class="fab fa-instagram fa-lg instagramIcon"></i></a>
+			<a href={socialMediaUrls.github} target="_blank"><i class="fab fa-github fa-lg githubIcon"></i></a>
+			<a href={socialMediaUrls.linkedIn} target="_blank"><i class="fab fa-linkedin fa-lg linkedinIcon"></i></a>
+			<a href={socialMediaUrls.youtube} target="_blank"><i class="fab fa-youtube fa-lg youtubeIcon"></i></a>
+		</ul>
+	)
 }
+
+export default SocialMediaIcons

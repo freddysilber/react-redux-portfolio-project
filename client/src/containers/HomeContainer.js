@@ -7,9 +7,9 @@ export default class HomeContainer extends React.Component {
 	render() {
 		return (
 			<div>
+				<Carousel />
 				<Bio />
 				{/* <Counter /> */}
-				<Carousel />
 			</div>
 		)
 	}

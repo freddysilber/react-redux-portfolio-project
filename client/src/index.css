@@ -13,7 +13,7 @@ code {
 }
 
 i {
-	margin: 1.5rem 0rem;
+	padding: 1rem 0rem;
 	transition: .3s;
 }
 
@@ -24,6 +24,9 @@ i:hover {
 }
 
 /* Font awesome icon colors (social media icons) */
+.socialMediaIconList {
+  margin: auto;
+}
 .twitterIcon {
   color: #1DA1F2;
 }
