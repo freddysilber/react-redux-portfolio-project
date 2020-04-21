@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image'
 import cloudcoach from '../pictures/cloudcoach.jpg'
 
 const Bio = () => {
-	const cloudcoachurl = () => <a href="https://cloudcoach.com/" target="_blank" className="cloudCoachAnchor">Cloud Coach</a>
+	const cloudcoachurl = () => <a href="https://cloudcoach.com/" target="_blank" rel="noopener noreferrer" className="cloudCoachAnchor">Cloud Coach</a>
 
 	return (
 		<Jumbotron fluid className="jumboTron">

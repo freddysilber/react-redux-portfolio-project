@@ -3,13 +3,13 @@ import CommentForm from '../components/CommentForm'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import { contactInfo } from '../data/util'
-import CreateUser from './UsersContainer'
+import UsersContainer from './UsersContainer'
 
 export default class InfoContainer extends React.Component {
 	render() {
 		return (
 			<div>
-				<CreateUser />
+				<UsersContainer />
 				<br />
 				<Tabs defaultActiveKey="comment">
 					<Tab eventKey="comment" title="Leave a comment">
