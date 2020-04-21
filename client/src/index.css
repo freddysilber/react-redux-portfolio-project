@@ -26,7 +26,7 @@ i:hover {
 	transform: scale(1.3);
 }
 
-/* Font awesome icon colors (social media icons) */
+/* Font awesome icon colors (social media icons) using branding colors for the icons */
 .socialMediaIconList {
   	margin: auto;
 }

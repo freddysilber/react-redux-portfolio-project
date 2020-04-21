@@ -7,12 +7,6 @@ export const countReducer = (state = {
 				...state,
 				count: state.count.concat(state.count.length + 1)
 			}
-
-		case 'DECREMENT_COUNT':
-			return {
-				...state,
-				count: state.count.concat(state.count.length - 1)
-			}
 		default:
 			return state
 	}

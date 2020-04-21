@@ -11,9 +11,9 @@ class PortfolioProjectContainer extends React.Component {
 
 	render() {
 		return (
-			<center>
+			<>
 				{this.handleLoading()}
-			</center>
+			</>
 		)
 	}
 

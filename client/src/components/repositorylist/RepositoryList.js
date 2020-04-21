@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 const RepositoryList = props => {
 	const listRepositories = () => {
 		return props.repositories.map(repo =>
-			<Card key={repo.id} style={{ width: '75%', margin: '.25rem', background: '#02375C' }}>
+			<Card key={repo.id} style={{ margin: '.25rem', background: '#02375C' }}>
 				<Card.Body>
 					<Card.Title>
 						<em><h4>
@@ -21,9 +21,6 @@ const RepositoryList = props => {
 
 	return (
 		<div>
-			<br />
-			<h2>Check out my projects!</h2>
-			<br />
 			{listRepositories()}
 		</div>
 	)
