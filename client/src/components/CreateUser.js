@@ -1,9 +1,10 @@
 import React from 'react'
-// import Spinner from 'react-bootstrap/Spinner'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import { createUser } from '../actions/userActions'
+import { connect } from 'react-redux'
 
-export default class CreateUser extends React.Component {
+class CreateUser extends React.Component {
 	constructor() {
 		super()
 		this.state = {
@@ -19,31 +20,29 @@ export default class CreateUser extends React.Component {
 		console.log(this.state)
 	}
 
-	handleSubmit = () => {
-		console.log('submit user')
-	}
-	// handleSubmit = event => {
-	// 	event.preventDefault()
-	// 	console.log(this.state)
-	// 	fetch('api/users', {
-	// 		method: 'POST',
-	// 		headers: {
-	// 			'Content-Type': 'application/json'
-	// 		},
-	// 		body: JSON.stringify({
-	// 			'username': this.state.username,
-	// 			'password': this.state.password
-	// 		})
-	// 	})
-	// 		.then(response => response.json())
-	// 		.then(console.log('success'))
-	// 		.catch(error => console.error(error))
+	handleSubmit = event => {
+		event.preventDefault()
+		// fetch('api/users', {
+		// 	method: 'POST',
+		// 	headers: {
+		// 		'Content-Type': 'application/json'
+		// 	},
+		// 	body: JSON.stringify({
+		// 		'username': this.state.username,
+		// 		'password': this.state.password
+		// 	})
+		// })
+		// 	.then(response => console.log(response.json()))
+		// 	// .then(response => response.json())
+		// 	// .then(data => dispatch({ type: 'ADD_USERS', users: data }))
+		// 	.catch(error => console.error(error))
+		createUser(this.state.username, this.state.password)
 
-	// 	this.setState({
-	// 		username: '',
-	// 		password: ''
-	// 	})
-	// }
+		this.setState({
+			username: '',
+			password: ''
+		})
+	}
 
 
 	render() {
@@ -65,3 +64,11 @@ export default class CreateUser extends React.Component {
 		)
 	}
 }
+
+const mapStateToProps = state => {
+	return {
+		users: state.users.users
+	}
+}
+
+export default connect(mapStateToProps, { createUser })(CreateUser)
