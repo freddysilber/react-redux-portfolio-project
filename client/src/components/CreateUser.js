@@ -11,8 +11,9 @@ export default class CreateUser extends React.Component {
 
 	componentDidMount() {
 		console.log('component did mount')
-		fetch('localhost:3001/users')
-			.then(response => console.log(response.json()))
+		fetch('api/users')
+			.then(response => response.json())
+			.then(data => console.log(data))
 			.catch(error => console.error(error))
 	}
 
