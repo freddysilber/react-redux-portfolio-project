@@ -48,3 +48,7 @@ linkedinIcon {
 .youtubeIcon {
 	  color: #FF0000;
 }
+
+.cardItem {
+	margin: .25rem;
+}
