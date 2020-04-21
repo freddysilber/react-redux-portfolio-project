@@ -8,6 +8,7 @@ import thunk from 'redux-thunk'
 import rootReducer from './reducers/rootReducer'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './fonts/DramaSans.ttf'
 
 const store = createStore(
   rootReducer,

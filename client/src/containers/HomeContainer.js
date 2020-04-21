@@ -3,14 +3,14 @@ import React from 'react'
 import Carousel from '../components/Carousel'
 import Bio from '../components/bio/Bio'
 
-export default class HomeContainer extends React.Component {
-	render() {
-		return (
-			<div>
-				<Carousel />
-				<Bio />
-				{/* <Counter /> */}
-			</div>
-		)
-	}
+const HomeContainer = () => {
+	return (
+		<>
+			<Carousel />
+			<Bio />
+			{/* <Counter /> */}
+		</>
+	)
 }
+
+export default HomeContainer

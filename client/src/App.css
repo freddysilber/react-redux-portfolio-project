@@ -36,8 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* Branding Colors */
-:root {
-  --primaryBlue: '#2B70A1'
-}
