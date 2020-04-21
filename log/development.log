@@ -4715,3 +4715,24 @@ Processing by UsersController#index as */*
 Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 1106)
 
 
+Started GET "/api/users" for 127.0.0.1 at 2020-04-21 16:09:14 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-21 16:09:23 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-21 16:09:36 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+

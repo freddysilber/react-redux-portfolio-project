@@ -6,7 +6,7 @@ export const getUsers = () => {
 		fetch(usersUrl)
 			.then(response => response.json())
 			.then(data => dispatch({ type: 'ADD_USERS', users: data }))
-			.catch(error => console.error(error))
+			.catch(error => console.error('There was an error fetching users.', error))
 	}
 }
 
@@ -27,6 +27,6 @@ export const createUser = (username, password) => {
 			// .then(response => console.log(response.json()))
 			.then(response => response.json())
 			.then(data => dispatch({ type: 'ADD_USERS', users: data }))
-			.catch(error => console.error(error))
+			.catch(error => console.error('There was an error creating the user.', error))
 	}
 }
