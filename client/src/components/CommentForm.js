@@ -32,22 +32,18 @@ export default class CommentForm extends React.Component {
 					<Form.Label>Email address</Form.Label>
 					<Form.Control type="email" placeholder="Enter email" name="email" onChange={this.handleChange} />
 				</Form.Group>
-
 				<Form.Group controlId="firstName">
 					<Form.Label>First Name</Form.Label>
 					<Form.Control type="text" placeholder="First Name" name="firstName" onChange={this.handleChange} />
 				</Form.Group>
-
 				<Form.Group controlId="lastName">
 					<Form.Label>First Name</Form.Label>
 					<Form.Control type="text" placeholder="Last Name" name="lastName" onChange={this.handleChange} />
 				</Form.Group>
-
 				<Form.Group controlId="comment">
 					<Form.Label>Comment</Form.Label>
 					<FormControl as="textarea" aria-label="comment" name="comment" onChange={this.handleChange} />
 				</Form.Group>
-
 				<Button variant="primary" type="submit">Submit</Button>
 			</Form>
 		)

@@ -1,19 +1,19 @@
-export const githubReducer = (state = {
-	repositories: [],
+export const usersReducer = (state = {
+	users: [],
 	loading: false
 }, action) => {
 	switch (action.type) {
 		case 'LOADING_DATA':
 			return {
 				...state,
-				repositories: [...state.repositories],
+				users: [...state.users],
 				loading: true
 			}
 
-		case 'ADD_GITHUB_DATA':
+		case 'ADD_USERS':
 			return {
 				...state,
-				repositories: action.repositories,
+				users: action.users.data,
 				loading: false
 			}
 

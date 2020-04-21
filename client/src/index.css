@@ -127,3 +127,9 @@ h4 {
 }
 
 /* Form Css */
+.createUserForm {
+	border: 1px solid #0A7FD2;
+	border-radius: 10px;
+	padding: .5rem;
+	margin: .5rem;
+}

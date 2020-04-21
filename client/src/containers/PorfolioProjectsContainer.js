@@ -30,11 +30,11 @@ class PortfolioProjectContainer extends React.Component {
 	}
 }
 
-const mapDispatchToProps = state => {
+const mapStateToProps = state => {
 	return {
 		repositories: state.github.repositories,
 		loading: state.github.loading
 	}
 }
 
-export default connect(mapDispatchToProps, { fetchRepositories })(PortfolioProjectContainer)
+export default connect(mapStateToProps, { fetchRepositories })(PortfolioProjectContainer)
