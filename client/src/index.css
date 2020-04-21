@@ -28,23 +28,23 @@ i:hover {
 
 /* Font awesome icon colors (social media icons) */
 .socialMediaIconList {
-  margin: auto;
+  	margin: auto;
 }
 .twitterIcon {
-  color: #1DA1F2;
+  	color: #1DA1F2;
 }
 .facebookIcon {
-  color: #4267B2;
+  	color: #4267B2;
 }
 .instagramIcon {
-  color: #C13584;
+  	color: #C13584;
 }
 .githubIcon {
-  color: white
+ 	 color: white
 }
 linkedinIcon {
-  color: #2867B2;
+	  color: #2867B2;
 }
 .youtubeIcon {
-  color: #FF0000;
+	  color: #FF0000;
 }

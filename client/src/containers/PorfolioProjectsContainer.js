@@ -22,7 +22,7 @@ class PortfolioProjectContainer extends React.Component {
 			return (
 				<div style={{ top: '50%', left: '50%', position: 'fixed' }}>
 					<Spinner animation="border" variant="dark" />
-				</div>
+				</div >
 			)
 		} else {
 			return <RepositoryList repositories={this.props.repositories} />
