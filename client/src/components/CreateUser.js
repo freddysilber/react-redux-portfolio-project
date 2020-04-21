@@ -9,6 +9,13 @@ export default class CreateUser extends React.Component {
 		}
 	}
 
+	componentDidMount() {
+		console.log('component did mount')
+		fetch('localhost:3001/users')
+			.then(response => console.log(response.json()))
+			.catch(error => console.error(error))
+	}
+
 	handleChange = event => {
 		this.setState({
 			[event.target.name]: event.target.value
