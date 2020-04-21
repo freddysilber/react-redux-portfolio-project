@@ -3,6 +3,7 @@ import CommentForm from '../components/CommentForm'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import { contactInfo } from '../data/util'
+import CreateUser from '../components/CreateUser'
 
 export default class InfoContainer extends React.Component {
 	render() {
@@ -21,6 +22,10 @@ export default class InfoContainer extends React.Component {
 							<p>Work Email: {contactInfo.workEmail}</p>
 							<p>Phone: {contactInfo.phone}</p>
 						</div>
+					</Tab>
+					<Tab eventKey="createUser" title="Log In / Sign up">
+						<h4>Log In or Sign up!</h4>
+						<CreateUser />
 					</Tab>
 				</Tabs>
 			</div>
