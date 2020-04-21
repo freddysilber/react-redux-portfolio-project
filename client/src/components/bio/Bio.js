@@ -2,7 +2,6 @@ import React from 'react'
 import SocialMediaIcons from '../../components/SocialMediaIcons'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Image from 'react-bootstrap/Image'
-// import profilePic from '../../pictures/profileMonopoly.jpeg'
 import selfie from '../../pictures/selfie.jpg'
 import './Bio.css'
 
