@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 const RepositoryList = props => {
 	const listRepositories = () => {
 		return props.repositories.map(repo =>
-			<Card key={repo.id} className="card">
+			<Card key={repo.id}>
 				<Card.Body>
 					<Card.Title>
 						<em><h4>

@@ -54,11 +54,6 @@ linkedinIcon {
 	  color: #FF0000;
 }
 
-/* Resume Container Css */
-.cardItem {
-	margin: .25rem;
-}
-
 /* Navigation Css */
 .navigation {
 	border-bottom: 2px solid #90BDDC;
@@ -116,11 +111,11 @@ h4 {
 	margin: .25rem !important;
 	background: #02375C !important;	
 }
-.cardLink {
+.cardLink, .card-title {
 	color: #FF6200 !important;
 	transition: .3s;
 }
-.cardLink:hover {
+.cardLink:hover{
 	text-decoration: underline !important;
 	color: #FB8237 !important;
 	transition: .3s;
