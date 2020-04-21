@@ -4,11 +4,11 @@ import Card from 'react-bootstrap/Card'
 const RepositoryList = props => {
 	const listRepositories = () => {
 		return props.repositories.map(repo =>
-			<Card key={repo.id} style={{ margin: '.25rem', background: '#02375C' }}>
+			<Card key={repo.id} className="card">
 				<Card.Body>
 					<Card.Title>
 						<em><h4>
-							<Card.Link href={repo.html_url} style={{ color: '#FF6200' }}>{repo.name}</Card.Link>
+							<Card.Link href={repo.html_url} className="cardLink">{repo.name}</Card.Link>
 						</h4></em>
 					</Card.Title>
 					<Card.Subtitle className="mb-2 text-muted">{repo.language}</Card.Subtitle>

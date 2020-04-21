@@ -54,13 +54,10 @@ linkedinIcon {
 	  color: #FF0000;
 }
 
+/* Resume Container Css */
 .cardItem {
 	margin: .25rem;
 }
-
-/* h3, p {
-	font-family: BalooTamma2;
-} */
 
 /* Navigation Css */
 .navigation {
@@ -68,31 +65,63 @@ linkedinIcon {
 	background-color: #0A7FD2;
 	font-family: BalooTamma2;
 }
-
-.navLink, .navLink:hover {
+.navLink {
 	color: #32373B;
 	text-decoration: none;
+	transition: .3s;
+}
+.navLink:hover {
+	color: #90BDDC;
+	text-decoration: none;
+	transition: .3s;
 }
 
 /* Bio Css */
 .bio {
 	margin: 0rem 1rem;
 }
-
 p, h4 {
 	color: #8BDDCA;
 }
-
 h4 {
 	font-weight: bolder;
 }
-
 .content {
 	display: flex;
 	font-family: DramaSans;
+}
+.cloudCoachAnchor {
+	color: #FF9000;
+}
+.jumboTron {
+	background: #323C39 !important;
+	margin-bottom: 0 !important;
+	padding: 1.5rem !important;
 }
 
 /* Carousel Css */
 .carouselContainer {
 	font-family: BalooTamma2;
+}
+
+/* Centers spinner */
+.spinnerContainer {
+	top: 50%;
+	left: 50%;
+	position: fixed;
+}
+
+/* Respository List Css */
+.card {
+	margin: .25rem !important;
+	background: #02375C !important;	
+}
+.cardLink {
+	color: #FF6200 !important;
+	transition: .3s;
+}
+.cardLink:hover {
+	text-decoration: underline !important;
+	color: #FB8237 !important;
+	transition: .3s;
 }

@@ -5,10 +5,10 @@ import Image from 'react-bootstrap/Image'
 import cloudcoach from '../pictures/cloudcoach.jpg'
 
 const Bio = () => {
-	const cloudcoachurl = () => <a href="https://cloudcoach.com/" target="_blank" style={{ color: '#FF9000' }}>Cloud Coach</a>
+	const cloudcoachurl = () => <a href="https://cloudcoach.com/" target="_blank" className="cloudCoachAnchor">Cloud Coach</a>
 
 	return (
-		<Jumbotron fluid style={{ background: '#323C39', marginBottom: '0', padding: '1.5rem' }}>
+		<Jumbotron fluid className="jumboTron">
 			<div className="content">
 				<Image src={cloudcoach} rounded height="400" />
 				<SocialMediaIcons />
