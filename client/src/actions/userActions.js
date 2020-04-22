@@ -29,8 +29,9 @@ export const createUser = (username, password) => {
 	}
 }
 
-export const deleteUser = (userId) => {
+export const deleteUser = userId => {
 	return dispatch => {
+		dispatch({ type: 'LOADING_DATA' })
 		fetch(`${usersUrl}/${userId}`, {
 			method: 'DELETE'
 		})

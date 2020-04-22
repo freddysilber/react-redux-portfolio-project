@@ -28,7 +28,8 @@ export const usersReducer = (state = {
 			const users = state.users.filter(user => user.id !== action.userId)
 			return {
 				...state,
-				users
+				users,
+				loading: false
 			}
 
 		default:

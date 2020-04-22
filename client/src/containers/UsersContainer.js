@@ -1,4 +1,5 @@
 import React from 'react'
+import Spinner from 'react-bootstrap/Spinner'
 import Users from '../components/Users/Users'
 import CreateUser from '../components/Users/CreateUser'
 import { connect } from 'react-redux'
@@ -10,15 +11,33 @@ class UsersContainer extends React.Component {
 	}
 
 	render() {
-		return (
-			<>
-				<CreateUser createUser={this.props.createUser} />
-				<Users users={this.props.users} deleteUser={this.props.deleteUser} />
-			</>
-		)
+		return this.handleLoading()
+	}
+
+	handleLoading = () => {
+		if (this.props.loading) {
+			return (
+				<div className="spinnerContainer">
+					<Spinner animation="border" variant="dark" />
+				</div >
+			)
+		} else {
+			return (
+				<>
+					<CreateUser createUser={this.props.createUser} />
+					<Users users={this.props.users} deleteUser={this.props.deleteUser} />
+				</>
+			)
+		}
 	}
 }
 
-const mapStateToProps = state => ({ users: state.users.users })
+const mapStateToProps = state => {
+	return {
+		users: state.users.users,
+		loading: state.users.loading
+	}
+}
+
 
 export default connect(mapStateToProps, { getUsers, createUser, deleteUser })(UsersContainer)
