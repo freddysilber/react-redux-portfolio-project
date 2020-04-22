@@ -135,6 +135,6 @@ h4 {
 }
 
 /* Covid Css */
-.latestTotalsCard {
+.latestTotalsCard, .countryCard {
 	background: white !important;
 }

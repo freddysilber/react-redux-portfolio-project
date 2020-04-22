@@ -1,6 +1,7 @@
 export const covidReducer = (state = {
 	latestTotals: {},
 	listOfCountries: [],
+	dataByCountry: null,
 	loading: false
 }, action) => {
 	switch (action.type) {
@@ -28,6 +29,13 @@ export const covidReducer = (state = {
 			return {
 				...state,
 				listOfCountries: countries,
+				loading: false
+			}
+
+		case 'ADD_SELECTED_COUNTRY_DATA':
+			return {
+				...state,
+				dataByCountry: action.covid19[0],
 				loading: false
 			}
 

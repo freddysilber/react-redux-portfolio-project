@@ -1,8 +1,9 @@
 import React from 'react'
 import CovidLatestTotals from '../components/Covid/CovidLatestTotals'
 import { connect } from 'react-redux'
-import { fetchCovidLatestTotals, fetchListOfCountries } from '../actions/covidActions'
+import { fetchCovidLatestTotals, fetchListOfCountries, fetchDataByCountry } from '../actions/covidActions'
 import CovidCountries from '../components/Covid/CovidCountries'
+import CountryData from '../components/Covid/CountryData'
 
 class CovidContainer extends React.Component {
 	componentDidMount() {
@@ -10,12 +11,26 @@ class CovidContainer extends React.Component {
 		this.props.fetchListOfCountries()
 	}
 
+	handleSelectCountry = event => {
+		this.props.fetchDataByCountry(event)
+	}
+
 	render() {
-		console.log(this.props.listOfCountries)
+		const { latestTotals, listOfCountries, dataByCountry } = this.props
+		const renderCountry = () => {
+			if (dataByCountry) {
+				return (
+					<CountryData dataByCountry={dataByCountry} />
+				)
+			}
+		}
 		return (
 			<>
-				<CovidLatestTotals latestTotals={this.props.latestTotals} />
-				<CovidCountries listOfCountries={this.props.listOfCountries} />
+				<CovidLatestTotals latestTotals={latestTotals} />
+				<div style={{ display: 'flex' }}>
+					<CovidCountries listOfCountries={listOfCountries} countrySelected={(event) => this.handleSelectCountry(event)} />
+					{renderCountry()}
+				</div>
 			</>
 		)
 	}
@@ -25,8 +40,13 @@ const mapStateToProps = state => {
 	return {
 		latestTotals: state.covid19.latestTotals,
 		listOfCountries: state.covid19.listOfCountries,
+		dataByCountry: state.covid19.dataByCountry,
 		loading: state.loading
 	}
 }
 
-export default connect(mapStateToProps, { fetchCovidLatestTotals, fetchListOfCountries })(CovidContainer)
+export default connect(mapStateToProps, {
+	fetchCovidLatestTotals,
+	fetchListOfCountries,
+	fetchDataByCountry
+})(CovidContainer)

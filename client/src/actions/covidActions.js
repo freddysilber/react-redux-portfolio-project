@@ -31,3 +31,20 @@ export const fetchListOfCountries = () => {
 			.catch(error => console.error(error))
 	}
 }
+
+export const fetchDataByCountry = country => {
+	return dispatch => {
+		dispatch({ type: 'LOADING_DATA' })
+		fetch(`${covid19Api.getDataByCountry}${country}`, {
+			'method': 'GET',
+			'headers': {
+				'x-rapidapi-host': rapidApiHost,
+				'x-rapidapi-key': covid19Key
+			}
+		})
+			.then(response => response.json())
+			// .then(data => console.log(data))
+			.then(data => dispatch({ type: 'ADD_SELECTED_COUNTRY_DATA', covid19: data }))
+			.catch(error => console.error(error))
+	}
+}
