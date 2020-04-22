@@ -3,19 +3,17 @@ import Card from 'react-bootstrap/Card'
 
 export default class CovidLatestTotals extends React.Component {
 	render() {
-		const { latestTotals } = this.props
+		const { confirmed, recovered, critical, deaths } = this.props.latestTotals
 		return (
 			<Card border="danger" className="latestTotalsCard">
 				<Card.Header>Covid-19</Card.Header>
 				<Card.Body>
 					<Card.Title>Latest Totals</Card.Title>
 					<Card.Text>
-						<div>
-							<h6>Confirmed: {latestTotals.confirmed}</h6>
-							<h6>Recovered: {latestTotals.recovered}</h6>
-							<h6>Critical: {latestTotals.critical}</h6>
-							<h6>Deaths: {latestTotals.deaths}</h6>
-						</div>
+						<p>Confirmed: {confirmed}</p>
+						<p>Recovered: {recovered}</p>
+						<p>Critical: {critical}</p>
+						<p>Deaths: {deaths}</p>
 					</Card.Text>
 				</Card.Body>
 			</Card>

@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { fetchCovidLatestTotals, fetchListOfCountries, fetchDataByCountry } from '../actions/covidActions'
 import CovidCountries from '../components/Covid/CovidCountries'
 import CountryData from '../components/Covid/CountryData'
+import CovidDataChart from '../components/Covid/CovidDataChart'
 
 class CovidContainer extends React.Component {
 	componentDidMount() {
@@ -18,11 +19,14 @@ class CovidContainer extends React.Component {
 	render() {
 		const { latestTotals, listOfCountries, dataByCountry } = this.props
 		return (
-			<div style={{ display: 'flex' }}>
-				<CovidLatestTotals latestTotals={latestTotals} />
-				<CountryData dataByCountry={dataByCountry} />
-				<CovidCountries listOfCountries={listOfCountries} selectedCountry={dataByCountry !== null ? dataByCountry.country : 'Select a Country'} countrySelected={(event) => this.handleSelectCountry(event)} />
-			</div>
+			<>
+				<div style={{ display: 'flex' }}>
+					<CovidLatestTotals latestTotals={latestTotals} />
+					<CountryData dataByCountry={dataByCountry} />
+					<CovidCountries listOfCountries={listOfCountries} selectedCountry={dataByCountry !== null ? dataByCountry.country : 'Select a Country'} countrySelected={(event) => this.handleSelectCountry(event)} />
+				</div>
+				<CovidDataChart latestTotals={latestTotals} />
+			</>
 		)
 	}
 }

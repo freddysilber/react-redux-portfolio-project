@@ -10,12 +10,10 @@ export default class CountryData extends React.Component {
 					<Card.Body>
 						<Card.Title>Stats for: {country}</Card.Title>
 						<Card.Text>
-							<div>
-								<h6>Confirmed: {confirmed}</h6>
-								<h6>Recovered: {recovered}</h6>
-								<h6>Critical: {critical}</h6>
-								<h6>Deaths: {deaths}</h6>
-							</div>
+							<p>Confirmed: {confirmed}</p>
+							<p>Recovered: {recovered}</p>
+							<p>Critical: {critical}</p>
+							<p>Deaths: {deaths}</p>
 						</Card.Text>
 					</Card.Body>
 				</Card>
