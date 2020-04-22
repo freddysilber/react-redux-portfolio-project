@@ -17,22 +17,12 @@ class CovidContainer extends React.Component {
 
 	render() {
 		const { latestTotals, listOfCountries, dataByCountry } = this.props
-		const renderCountry = () => {
-			if (dataByCountry) {
-				return (
-					<CountryData dataByCountry={dataByCountry} />
-				)
-			}
-		}
-		const selectedCountryName = dataByCountry !== null ? dataByCountry.country : 'Select a Country'
 		return (
-			<>
+			<div style={{ display: 'flex' }}>
 				<CovidLatestTotals latestTotals={latestTotals} />
-				<div style={{ display: 'flex' }}>
-					<CovidCountries listOfCountries={listOfCountries} selectedCountry={selectedCountryName} countrySelected={(event) => this.handleSelectCountry(event)} />
-					{renderCountry()}
-				</div>
-			</>
+				<CountryData dataByCountry={dataByCountry} />
+				<CovidCountries listOfCountries={listOfCountries} selectedCountry={dataByCountry !== null ? dataByCountry.country : 'Select a Country'} countrySelected={(event) => this.handleSelectCountry(event)} />
+			</div>
 		)
 	}
 }

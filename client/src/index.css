@@ -138,3 +138,7 @@ h4 {
 .latestTotalsCard, .countryCard {
 	background: white !important;
 }
+
+.dropdown {
+	padding: .25rem !important;
+}
