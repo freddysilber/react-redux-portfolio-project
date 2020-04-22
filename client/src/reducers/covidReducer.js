@@ -1,19 +1,26 @@
 export const covidReducer = (state = {
-	covid19: [],
+	latestTotals: {},
 	loading: false
 }, action) => {
 	switch (action.type) {
 		case 'LOADING_DATA':
 			return {
 				...state,
-				cats: [...state.covid19],
 				loading: true
 			}
 
 		case 'ADD_COVID_DATA':
+			console.log('ADD_COVID_DATA', action)
 			return {
 				...state,
-				covid19: action.covid19,
+				loading: false
+			}
+
+		case 'ADD_LATEST_TOTALS':
+			console.log('ADD_LATEST_TOTALS', action.covid19[0])
+			return {
+				...state,
+				latestTotals: action.covid19[0],
 				loading: false
 			}
 

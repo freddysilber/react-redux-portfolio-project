@@ -133,3 +133,8 @@ h4 {
 	padding: .5rem;
 	margin: .5rem;
 }
+
+/* Covid Css */
+.latestTotalsCard {
+	background: white !important;
+}

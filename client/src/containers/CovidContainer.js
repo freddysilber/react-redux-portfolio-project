@@ -1,24 +1,27 @@
 import React from 'react'
+import CovidLatestTotals from '../components/Covid/CovidLatestTotals'
 import { connect } from 'react-redux'
-import { fetchCovidData } from '../actions/covidActions'
+import { fetchCovidLatestTotals } from '../actions/covidActions'
 
 class CovidContainer extends React.Component {
 	componentDidMount() {
-		console.log('get covid data', this.props)
-		// this.props.fetchCovidData()
+		this.props.fetchCovidLatestTotals()
 	}
 
 	render() {
-		return <div>Covid Container</div>
+		return (
+			<>
+				<CovidLatestTotals latestTotals={this.props.latestTotals} />
+			</>
+		)
 	}
 }
 
 const mapStateToProps = state => {
-	return { loading: state.loading }
+	return {
+		latestTotals: state.covid19.latestTotals,
+		loading: state.loading
+	}
 }
 
-const mapDispatchToProps = dispatch => {
-	return { fetchCovidData: () => dispatch(fetchCovidData()) }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(CovidContainer)
+export default connect(mapStateToProps, { fetchCovidLatestTotals })(CovidContainer)

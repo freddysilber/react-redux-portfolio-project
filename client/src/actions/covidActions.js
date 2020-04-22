@@ -1,9 +1,9 @@
 import { rapidApiHost, covid19Key, covidRoutes } from '../data/covidData'
 
-export const fetchCovidData = () => {
+export const fetchCovidLatestTotals = () => {
 	return (dispatch) => {
 		dispatch({ type: 'LOADING_DATA' })
-		fetch(covidRoutes.getTotals, {
+		fetch(covidRoutes.getLatestTotals, {
 			'method': 'GET',
 			'headers': {
 				'x-rapidapi-host': rapidApiHost,
@@ -11,7 +11,7 @@ export const fetchCovidData = () => {
 			}
 		})
 			.then(response => response.json())
-			.then(data => dispatch({ type: 'ADD_COVID_DATA', covid19: data.data }))
+			.then(data => dispatch({ type: 'ADD_LATEST_TOTALS', covid19: data }))
 			.catch(error => console.error('ERROR!!! ==>', error))
 	}
 }
