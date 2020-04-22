@@ -24,6 +24,13 @@ export const usersReducer = (state = {
 				loading: false
 			}
 
+		case 'REMOVE_USER':
+			const users = state.users.filter(user => user.id !== action.userId)
+			return {
+				...state,
+				users
+			}
+
 		default:
 			return state
 	}

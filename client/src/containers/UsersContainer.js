@@ -1,9 +1,8 @@
 import React from 'react'
-import UserList from '../components/UserList'
+import Users from '../components/Users'
 import CreateUser from '../components/CreateUser'
 import { connect } from 'react-redux'
 import { getUsers, createUser, deleteUser } from '../actions/userActions'
-// import { getUsers } from '../actions/userActions'
 import Spinner from 'react-bootstrap/Spinner'
 
 class UsersContainer extends React.Component {
@@ -12,11 +11,7 @@ class UsersContainer extends React.Component {
 	}
 
 	render() {
-		return (
-			<>
-				{this.handleLoading()}
-			</>
-		)
+		return this.handleLoading()
 	}
 
 	handleLoading = () => {
@@ -30,7 +25,7 @@ class UsersContainer extends React.Component {
 			return (
 				<>
 					<CreateUser createUser={this.props.createUser} />
-					<UserList users={this.props.users} deleteUser={this.props.deleteUser} />
+					<Users users={this.props.users} deleteUser={this.props.deleteUser} />
 				</>
 			)
 		}
@@ -40,4 +35,3 @@ class UsersContainer extends React.Component {
 const mapStateToProps = state => ({ users: state.users.users })
 
 export default connect(mapStateToProps, { getUsers, createUser, deleteUser })(UsersContainer)
-// export default connect(mapStateToProps, { getUsers })(UsersContainer)

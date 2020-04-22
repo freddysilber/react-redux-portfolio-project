@@ -30,9 +30,11 @@ export const createUser = (username, password) => {
 }
 
 export const deleteUser = (userId) => {
-	fetch(`${usersUrl}/${userId}`, {
-		method: 'DELETE'
-	})
-		.then(response => console.log(response.json()))
-		.catch(error => console.error(error))
+	return dispatch => {
+		fetch(`${usersUrl}/${userId}`, {
+			method: 'DELETE'
+		})
+			.then(() => dispatch({ type: 'REMOVE_USER', userId }))
+			.catch(error => console.error(error))
+	}
 }
