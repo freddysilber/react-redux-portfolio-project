@@ -24,8 +24,8 @@ class CovidContainer extends React.Component {
 					<CovidLatestTotals latestTotals={latestTotals} />
 					<CountryData dataByCountry={dataByCountry} />
 					<CovidCountries listOfCountries={listOfCountries} selectedCountry={dataByCountry !== null ? dataByCountry.country : 'Select a Country'} countrySelected={(event) => this.handleSelectCountry(event)} />
+					<CovidDataChart latestTotals={latestTotals} dataByCountry={dataByCountry} />
 				</div>
-				<CovidDataChart latestTotals={latestTotals} />
 			</>
 		)
 	}
