@@ -3,6 +3,7 @@ import UserList from '../components/UserList'
 import CreateUser from '../components/CreateUser'
 import { connect } from 'react-redux'
 import { getUsers } from '../actions/userActions'
+import Spinner from 'react-bootstrap/Spinner'
 
 class UsersContainer extends React.Component {
 	componentDidMount() {
@@ -12,10 +13,26 @@ class UsersContainer extends React.Component {
 	render() {
 		return (
 			<>
-				<CreateUser />
-				<UserList users={this.props.users} />
+				{this.handleLoading()}
 			</>
 		)
+	}
+
+	handleLoading = () => {
+		if (this.props.loading) {
+			return (
+				<div className="spinnerContainer">
+					<Spinner animation="border" variant="dark" />
+				</div>
+			)
+		} else {
+			return (
+				<>
+					<CreateUser />
+					<UserList users={this.props.users} />
+				</>
+			)
+		}
 	}
 }
 

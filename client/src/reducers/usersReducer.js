@@ -11,6 +11,7 @@ export const usersReducer = (state = {
 			}
 
 		case 'ADD_USERS':
+			console.log('ADD_USERS', action.users.data)
 			return {
 				...state,
 				users: action.users.data,

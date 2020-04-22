@@ -11,7 +11,6 @@ export const getUsers = () => {
 }
 
 export const createUser = (username, password) => {
-	console.log('create user func', username, password)
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
 		fetch(usersUrl, {
@@ -24,7 +23,6 @@ export const createUser = (username, password) => {
 				'password': password
 			})
 		})
-			// .then(response => console.log(response.json()))
 			.then(response => response.json())
 			.then(data => dispatch({ type: 'ADD_USERS', users: data }))
 			.catch(error => console.error('There was an error creating the user.', error))
