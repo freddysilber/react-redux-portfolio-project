@@ -35,7 +35,7 @@ export const fetchListOfCountries = () => {
 export const fetchDataByCountry = country => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
-		fetch(`${covid19Api.getDataByCountry}${country}`, {
+		fetch(`${covid19Api.getDataByCountry}${country.split(' ').join(' ')}`, {
 			'method': 'GET',
 			'headers': {
 				'x-rapidapi-host': rapidApiHost,
