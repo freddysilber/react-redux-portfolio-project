@@ -24,6 +24,9 @@ export const createUser = (username, password) => {
 			})
 		})
 			.then(response => response.json())
+			// .then(data => {
+			// 	console.log('new user data', data.data)
+			// })
 			.then(data => dispatch({ type: 'ADD_USERS', users: data }))
 			.catch(error => console.error('There was an error creating the user.', error))
 	}
