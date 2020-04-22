@@ -1,5 +1,6 @@
 export const covidReducer = (state = {
 	latestTotals: {},
+	listOfCountries: [],
 	loading: false
 }, action) => {
 	switch (action.type) {
@@ -10,17 +11,23 @@ export const covidReducer = (state = {
 			}
 
 		case 'ADD_COVID_DATA':
-			console.log('ADD_COVID_DATA', action)
 			return {
 				...state,
 				loading: false
 			}
 
 		case 'ADD_LATEST_TOTALS':
-			console.log('ADD_LATEST_TOTALS', action.covid19[0])
 			return {
 				...state,
 				latestTotals: action.covid19[0],
+				loading: false
+			}
+
+		case 'ADD_LIST_OF_COUNTRIES':
+			const countries = action.covid19.map(country => country.name)
+			return {
+				...state,
+				listOfCountries: countries,
 				loading: false
 			}
 
