@@ -28,3 +28,11 @@ export const createUser = (username, password) => {
 			.catch(error => console.error('There was an error creating the user.', error))
 	}
 }
+
+export const deleteUser = (userId) => {
+	fetch(`${usersUrl}/${userId}`, {
+		method: 'DELETE'
+	})
+		.then(response => console.log(response.json()))
+		.catch(error => console.error(error))
+}

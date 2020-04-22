@@ -2,7 +2,7 @@ import React from 'react'
 import UserList from '../components/UserList'
 import CreateUser from '../components/CreateUser'
 import { connect } from 'react-redux'
-import { getUsers, createUser } from '../actions/userActions'
+import { getUsers } from '../actions/userActions'
 import Spinner from 'react-bootstrap/Spinner'
 
 class UsersContainer extends React.Component {
@@ -29,15 +29,13 @@ class UsersContainer extends React.Component {
 			return (
 				<>
 					<CreateUser />
-					<UserList users={this.props.users} />
+					<UserList users={this.props.users} deleteUser={this.props.deleteUser} />
 				</>
 			)
 		}
 	}
 }
 
-const mapStateToProps = state => {
-	return { users: state.users.users }
-}
+const mapStateToProps = state => ({ users: state.users.users })
 
-export default connect(mapStateToProps, { getUsers, createUser })(UsersContainer)
+export default connect(mapStateToProps, { getUsers })(UsersContainer)
