@@ -35,11 +35,11 @@ class CreateUser extends React.Component {
 				<Form onSubmit={this.handleSubmit}>
 					<Form.Group controlId="username">
 						<Form.Label>Username</Form.Label>
-						<Form.Control type="text" placeholder="username" name="username" autoComplete="username" onChange={this.handleChange} />
+						<Form.Control type="text" placeholder="username" name="username" autoComplete="username" onChange={this.handleChange} value={this.state.username} />
 					</Form.Group>
 					<Form.Group controlId="password">
 						<Form.Label>Password</Form.Label>
-						<Form.Control type="password" placeholder="password" name="password" autoComplete="current-password" onChange={this.handleChange} />
+						<Form.Control type="password" placeholder="password" name="password" autoComplete="current-password" onChange={this.handleChange} value={this.state.password} />
 					</Form.Group>
 					<Button type="submit">Submit</Button>
 				</Form>

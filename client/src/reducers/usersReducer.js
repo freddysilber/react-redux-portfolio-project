@@ -11,13 +11,16 @@ export const usersReducer = (state = {
 			}
 
 		case 'ADD_USERS':
-			const user = action.users.data
-			// const user = action.users.data
-			console.log('ADD_USERS', user, '---', action.users.data)
 			return {
 				...state,
-				users: [...state.users, ...user],
-				// users: [...state.users, ...user],
+				users: [...state.users, ...action.users],
+				loading: false
+			}
+
+		case 'ADD_NEW_USER':
+			return {
+				...state,
+				users: [...state.users, action.users.data],
 				loading: false
 			}
 
