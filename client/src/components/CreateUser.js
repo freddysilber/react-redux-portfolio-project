@@ -1,8 +1,6 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import { createUser } from '../actions/userActions'
-import { connect } from 'react-redux'
 
 class CreateUser extends React.Component {
 	constructor() {
@@ -48,10 +46,4 @@ class CreateUser extends React.Component {
 	}
 }
 
-const mapStateToProps = state => {
-	return {
-		users: state.users.users
-	}
-}
-
-export default connect(mapStateToProps, { createUser })(CreateUser)
+export default CreateUser
