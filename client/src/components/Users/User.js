@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card'
 
 export default class User extends React.Component {
 	handleClick = () => {
@@ -8,10 +9,10 @@ export default class User extends React.Component {
 	render() {
 		const { user } = this.props
 		return (
-			<div>
-				<div>{user.id} - {user.attributes.username}</div>
-				<button onClick={() => this.handleClick()}>X</button>
-			</div>
+			<Card body>
+				<i className="fas fa-times" style={{ float: 'right', color: '#FF6200' }} onClick={() => this.handleClick()}></i>
+				<h4>{user.id} - {user.attributes.username}</h4>
+			</Card>
 		)
 	}
 }

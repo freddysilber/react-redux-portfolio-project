@@ -12,9 +12,9 @@ export default class Users extends React.Component {
 		})
 
 		return (
-			<ul>
+			<>
 				{userList}
-			</ul>
+			</>
 		)
 	}
 }
