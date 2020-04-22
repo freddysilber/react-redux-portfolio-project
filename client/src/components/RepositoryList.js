@@ -19,11 +19,7 @@ const RepositoryList = props => {
 		)
 	}
 
-	return (
-		<div>
-			{listRepositories()}
-		</div>
-	)
+	return listRepositories()
 }
 
 export default RepositoryList

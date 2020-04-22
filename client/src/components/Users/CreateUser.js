@@ -2,7 +2,7 @@ import React from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-class CreateUser extends React.Component {
+export default class CreateUser extends React.Component {
 	constructor() {
 		super()
 		this.state = {
@@ -45,5 +45,3 @@ class CreateUser extends React.Component {
 		)
 	}
 }
-
-export default CreateUser

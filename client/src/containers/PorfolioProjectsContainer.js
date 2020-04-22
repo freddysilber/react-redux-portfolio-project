@@ -10,11 +10,7 @@ class PortfolioProjectContainer extends React.Component {
 	}
 
 	render() {
-		return (
-			<>
-				{this.handleLoading()}
-			</>
-		)
+		return this.handleLoading()
 	}
 
 	handleLoading = () => {

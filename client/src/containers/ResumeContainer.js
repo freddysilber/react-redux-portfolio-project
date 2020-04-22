@@ -1,5 +1,4 @@
 import React from 'react'
-// import Counter from '../components/Counter'
 import Card from 'react-bootstrap/Card'
 
 const ResumeContainer = () => {
@@ -47,9 +46,6 @@ const ResumeContainer = () => {
 					<Card.Text>Working currently as a developer doing project management software on Salesforce. #SAS.</Card.Text>
 				</Card.Body>
 			</Card>
-			{/* <div className="text-center">
-				<Counter />
-			</div> */}
 		</div>
 	)
 }

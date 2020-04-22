@@ -12,8 +12,6 @@ export const fetchCovidData = () => {
 		})
 			.then(response => response.json())
 			.then(data => dispatch({ type: 'ADD_COVID_DATA', covid19: data.data }))
-			.catch(error => {
-				console.error('ERROR!!! ==>', error)
-			})
+			.catch(error => console.error('ERROR!!! ==>', error))
 	}
 }

@@ -9,22 +9,16 @@ class CovidContainer extends React.Component {
 	}
 
 	render() {
-		return (
-			<div>Covid Container</div>
-		)
+		return <div>Covid Container</div>
 	}
 }
 
 const mapStateToProps = state => {
-	return {
-		loading: state.loading
-	}
+	return { loading: state.loading }
 }
 
 const mapDispatchToProps = dispatch => {
-	return {
-		fetchCovidData: () => dispatch(fetchCovidData())
-	}
+	return { fetchCovidData: () => dispatch(fetchCovidData()) }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(CovidContainer)

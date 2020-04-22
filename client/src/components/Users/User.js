@@ -2,9 +2,7 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 
 export default class User extends React.Component {
-	handleClick = () => {
-		this.props.deleteUser(this.props.user.id)
-	}
+	handleClick = () => this.props.deleteUser(this.props.user.id)
 
 	render() {
 		const { user } = this.props
