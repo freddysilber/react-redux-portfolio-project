@@ -1,10 +1,9 @@
 import React from 'react'
-import User from '../components/User'
+import User from './User'
 
 export default class Users extends React.Component {
 
 	render() {
-		console.log(this.props)
 		const { users, deleteUser } = this.props
 		const userList = users.map(user => {
 			return (
