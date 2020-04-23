@@ -58,9 +58,14 @@ export default class CreateJobListing extends React.Component {
 						<Form.Label>Description</Form.Label>
 						<Form.Control type="text" placeholder="description" name="description" autoComplete="description" onChange={this.handleChange} value={this.state.description} />
 					</Form.Group>
-					<DatePicker selected={this.state.startDate} onChange={this.handleStartDateChange} />
-					<DatePicker selected={this.state.endDate} onChange={this.handleEndDateChange} />
-					<br />
+					<Form.Group controlId="startDate">
+						<Form.Label>Start Date</Form.Label>
+						<DatePicker selected={this.state.startDate} onChange={this.handleStartDateChange} />
+					</Form.Group>
+					<Form.Group controlId="startDate">
+						<Form.Label>End Date</Form.Label>
+						<DatePicker selected={this.state.endDate} onChange={this.handleEndDateChange} />
+					</Form.Group>
 					<Button type="submit">Submit</Button>
 				</Form>
 			</div>
