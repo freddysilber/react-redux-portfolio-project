@@ -22,7 +22,7 @@ class ResumeContainer extends React.Component {
 				</div>
 			)
 		} else {
-			return <JobListings jobListings={this.props.jobListings} />
+			return <JobListings jobListings={this.props.jobListings} readOnly={true} />
 		}
 	}
 }

@@ -25,7 +25,7 @@ class JobListingsContainer extends React.Component {
 			return (
 				<>
 					<CreateJobListing createJobListing={this.props.createJobListing} />
-					<JobListings jobListings={this.props.jobListings} deleteJobListing={this.props.deleteJobListing} />
+					<JobListings jobListings={this.props.jobListings} deleteJobListing={this.props.deleteJobListing} readOnly={false} />
 				</>
 			)
 		}
