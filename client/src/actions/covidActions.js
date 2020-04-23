@@ -43,7 +43,6 @@ export const fetchDataByCountry = country => {
 			}
 		})
 			.then(response => response.json())
-			// .then(data => console.log(data))
 			.then(data => dispatch({ type: 'ADD_SELECTED_COUNTRY_DATA', covid19: data }))
 			.catch(error => console.error(error))
 	}

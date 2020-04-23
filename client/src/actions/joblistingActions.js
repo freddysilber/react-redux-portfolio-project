@@ -24,7 +24,7 @@ export const createJobListing = name => {
 		})
 			.then(response => response.json())
 			.then(data => dispatch({ type: 'ADD_NEW_JOB_LISTING', jobListings: data }))
-			.catch(error => console.log('There was an error creating this job listing', error))
+			.catch(error => console.error('There was an error creating this job listing', error))
 	}
 }
 

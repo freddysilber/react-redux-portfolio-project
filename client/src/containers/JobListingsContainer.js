@@ -33,7 +33,6 @@ class JobListingsContainer extends React.Component {
 }
 
 const mapStateToProps = state => {
-	console.log(state)
 	return {
 		jobListings: state.jobListings.jobListings,
 		loading: state.jobListings.loading

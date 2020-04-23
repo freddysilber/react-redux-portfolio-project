@@ -9,18 +9,3 @@ export const covid19Api = {
 	getListOfCountries: 'https://covid-19-data.p.rapidapi.com/help/countries?format=json',
 	getDataByCountry: 'https://covid-19-data.p.rapidapi.com/country?format=json&name='
 }
-
-//* By Country
-// fetch("https://covid-19-data.p.rapidapi.com/country?format=json&name=italy", {
-//   "method": "GET",
-//   "headers": {
-//     "x-rapidapi-host": "covid-19-data.p.rapidapi.com",
-//     "x-rapidapi-key": "1b3d9e46b6mshfee9751b44509ebp1b904djsn5e5d468a0778"
-//   }
-// })
-//   .then(response => {
-//     console.log(response.json());
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
