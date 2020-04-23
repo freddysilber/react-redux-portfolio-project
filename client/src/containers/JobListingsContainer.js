@@ -40,4 +40,8 @@ const mapStateToProps = state => {
 	}
 }
 
-export default connect(mapStateToProps, { getJobListings, createJobListing, deleteJobListing })(JobListingsContainer)
+export default connect(mapStateToProps, {
+	getJobListings,
+	createJobListing,
+	deleteJobListing
+})(JobListingsContainer)

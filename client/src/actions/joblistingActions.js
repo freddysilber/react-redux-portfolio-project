@@ -34,7 +34,7 @@ export const deleteJobListing = jobListingId => {
 		fetch(`${joblistingsUrl}/${jobListingId}`, {
 			method: 'DELETE'
 		})
-			.then(() => dispatch({ type: 'REMOVE_JOB_LISTING' }))
+			.then(() => dispatch({ type: 'REMOVE_JOB_LISTING', jobListingId }))
 			.catch(error => console.error(error))
 	}
 }

@@ -13,6 +13,13 @@ export const joblistingsReducer = (state = {
 		case 'ADD_JOB_LISTINGS':
 			return {
 				...state,
+				jobListings: [...state.jobListings, ...action.jobListings],
+				loading: false
+			}
+
+		case 'ADD_NEW_JOB_LISTING':
+			return {
+				...state,
 				jobListings: [...state.jobListings, action.jobListings.data],
 				loading: false
 			}
