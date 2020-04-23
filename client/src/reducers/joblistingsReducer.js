@@ -17,6 +17,14 @@ export const joblistingsReducer = (state = {
 				loading: false
 			}
 
+		case 'REMOVE_JOB_LISTING':
+			const jobListings = state.jobListings.filter(jobListing => jobListing.id !== action.jobListingId)
+			return {
+				...state,
+				jobListings,
+				loading: false
+			}
+
 		default:
 			return state
 	}

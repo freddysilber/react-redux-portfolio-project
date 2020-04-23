@@ -27,7 +27,7 @@ export default class AdminContainer extends React.Component {
 								<UsersContainer />
 							</Tab.Pane>
 							<Tab.Pane eventKey="jobListings">
-								<h1>Edit Job Listings</h1>
+								<h1>Edit/ Create Job Listings</h1>
 								<JobListingsContainer />
 							</Tab.Pane>
 						</Tab.Content>

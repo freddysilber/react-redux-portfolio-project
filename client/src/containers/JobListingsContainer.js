@@ -1,7 +1,9 @@
 import React from 'react'
 import Spinner from 'react-bootstrap/Spinner'
 import { connect } from 'react-redux'
-import { getJobListings } from '../actions/joblistingActions'
+import { getJobListings, createJobListing, deleteJobListing } from '../actions/joblistingActions'
+import CreateJobListing from '../components/JobListings/CreateJobListing'
+import JobListings from '../components/JobListings/JobListings'
 
 class JobListingsContainer extends React.Component {
 	componentDidMount() {
@@ -22,7 +24,8 @@ class JobListingsContainer extends React.Component {
 		} else {
 			return (
 				<>
-					<p>thing</p>
+					<CreateJobListing createJobListing={this.props.createJobListing} />
+					<JobListings jobListings={this.props.jobListings} deleteJobListing={this.props.deleteJobListing} />
 				</>
 			)
 		}
@@ -30,10 +33,11 @@ class JobListingsContainer extends React.Component {
 }
 
 const mapStateToProps = state => {
+	console.log(state)
 	return {
-		joblistings: state.joblistings.joblistings,
-		loading: state.joblistings.loading
+		jobListings: state.jobListings.jobListings,
+		loading: state.jobListings.loading
 	}
 }
 
-export default connect(mapStateToProps, { getJobListings })(JobListingsContainer)
+export default connect(mapStateToProps, { getJobListings, createJobListing, deleteJobListing })(JobListingsContainer)
