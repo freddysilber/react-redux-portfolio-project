@@ -95,7 +95,8 @@ h4 {
 }
 .content {
 	display: flex;
-	font-family: DramaSans;
+	/* font-family: DramaSans; */
+	font-family: BalooTamma2;
 }
 .cloudCoachAnchor {
 	color: #FF9000;

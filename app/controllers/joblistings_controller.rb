@@ -6,7 +6,10 @@ class JoblistingsController < ApplicationController
 
 	def create
 		joblisting = Joblisting.create(
-			name: params[:name]
+			name: params[:name],
+			description: params[:description],
+			start_date: params[:start_date],
+			end_date: params[:end_date]
 		)
 		render json: JoblistingSerializer.new(joblisting)
 	end

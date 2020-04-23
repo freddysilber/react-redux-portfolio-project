@@ -10,7 +10,7 @@ export const getJobListings = () => {
 	}
 }
 
-export const createJobListing = name => {
+export const createJobListing = (name, description, startDate, endDate) => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
 		fetch(joblistingsUrl, {
@@ -19,7 +19,10 @@ export const createJobListing = name => {
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({
-				'name': name
+				'name': name,
+				'description': description,
+				'start_date': startDate,
+				'end_date': endDate
 			})
 		})
 			.then(response => response.json())

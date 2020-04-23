@@ -6,9 +6,10 @@ export default class CreateJobListing extends React.Component {
 	constructor() {
 		super()
 		this.state = {
-			name: ''
-			// startDate:'',
-			// endDate
+			name: '',
+			description: '',
+			startDate: '',
+			endDate: ''
 		}
 	}
 
@@ -20,7 +21,9 @@ export default class CreateJobListing extends React.Component {
 
 	handleSubmit = event => {
 		event.preventDefault()
-		this.props.createJobListing(this.state.name)
+		const { name, description, startDate, endDate } = this.state
+		this.props.createJobListing(name, description, startDate, endDate)
+		// this.props.createJobListing(this.state.name)
 		this.setState({
 			name: ''
 		})
@@ -35,10 +38,10 @@ export default class CreateJobListing extends React.Component {
 						<Form.Label>Name</Form.Label>
 						<Form.Control type="text" placeholder="Job Name" name="name" autoComplete="name" onChange={this.handleChange} value={this.state.name} />
 					</Form.Group>
-					{/* <Form.Group controlId="password">
-						<Form.Label>Password</Form.Label>
-						<Form.Control type="password" placeholder="password" name="password" autoComplete="current-password" onChange={this.handleChange} value={this.state.password} />
-					</Form.Group> */}
+					<Form.Group controlId="description">
+						<Form.Label>Description</Form.Label>
+						<Form.Control type="text" placeholder="description" name="description" autoComplete="description" onChange={this.handleChange} value={this.state.description} />
+					</Form.Group>
 					<Button type="submit">Submit</Button>
 				</Form>
 			</div>
