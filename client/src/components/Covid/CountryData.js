@@ -7,6 +7,7 @@ export default class CountryData extends React.Component {
 			const { country, confirmed, critical, recovered, deaths } = this.props.dataByCountry
 			return (
 				<Card border="danger" className="countryCard">
+					<Card.Header>{country}</Card.Header>
 					<Card.Body>
 						<Card.Title>Stats for: {country}</Card.Title>
 						<Card.Text>
@@ -19,7 +20,7 @@ export default class CountryData extends React.Component {
 				</Card>
 			)
 		} else {
-			return <></>
+			return null
 		}
 	}
 }

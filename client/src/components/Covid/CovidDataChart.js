@@ -27,12 +27,12 @@ export default class Example extends PureComponent {
 
 	render() {
 		return (
-			<RadarChart cx={300} cy={250} outerRadius={200} width={800} height={500} data={this.getDataFromProps()}>
+			<RadarChart cx={400} cy={250} outerRadius={200} width={800} height={500} data={this.getDataFromProps()}>
 				<PolarGrid />
 				<PolarAngleAxis dataKey="subject" />
-				<PolarRadiusAxis angle={45} domain={[50, 250]} />
-				<Radar name="World Wide" dataKey="Global" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-				<Radar name={this.getCountryName()} dataKey="Country" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6} />
+				<PolarRadiusAxis angle={135} domain={[50, 250]} />
+				<Radar name="World Wide" dataKey="Global" stroke="#FF6200" fill="#FFC5A1" fillOpacity={0.6} />
+				<Radar name={this.getCountryName()} dataKey="Country" stroke="#0A7FD2" fill="#90BDDC" fillOpacity={0.6} />
 				<Legend />
 			</RadarChart>
 		)
