@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import PortfolioProjectContainer from './containers/PorfolioProjectsContainer'
 import HomeContainer from './containers/HomeContainer'
 import ResumeContainer from './containers/ResumeContainer'
-import InfoContainer from './containers/InfoContainer'
+import AdminContainer from './containers/AdminContainer'
 
 export default class App extends React.Component {
   render() {
@@ -17,7 +17,7 @@ export default class App extends React.Component {
           <Route path="/resume" component={ResumeContainer} />
           <Route path="/portfolioprojects" component={PortfolioProjectContainer} />
           <Route path="/covid19" component={CovidContainer} />
-          <Route path="/info" component={InfoContainer} />
+          <Route path="/admin" component={AdminContainer} />
         </Switch>
       </Router>
     )
