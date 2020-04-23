@@ -11946,3 +11946,47 @@ Processing by JoblistingsController#index as */*
 Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1158)
 
 
+Started GET "/api/users" for 127.0.0.1 at 2020-04-23 10:47:11 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-23 10:47:11 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 1.1ms | Allocations: 11004)
+
+
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 1.4ms | Allocations: 6866)
+
+
+Started POST "/api/joblistings" for 127.0.0.1 at 2020-04-23 10:47:22 -0600
+Processing by JoblistingsController#create as */*
+  Parameters: {"name"=>"new job 1", "description"=>"desc", "start_date"=>"", "end_date"=>"", "joblisting"=>{"name"=>"new job 1", "start_date"=>"", "end_date"=>"", "description"=>"desc"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/joblistings_controller.rb:8:in `create'
+  [1m[36mJoblisting Create (0.5ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "new job 1"], ["description", "desc"], ["created_at", "2020-04-23 16:47:22.188311"], ["updated_at", "2020-04-23 16:47:22.188311"]]
+  ↳ app/controllers/joblistings_controller.rb:8:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/joblistings_controller.rb:8:in `create'
+Completed 200 OK in 17ms (Views: 2.7ms | ActiveRecord: 1.3ms | Allocations: 2451)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-23 10:47:46 -0600
+Processing by JoblistingsController#index as */*
+Started GET "/api/users" for 127.0.0.1 at 2020-04-23 10:47:46 -0600
+  [1m[36mJoblisting Load (0.5ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.5ms | Allocations: 2601)
+
+
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.3ms | Allocations: 1672)
+
+
