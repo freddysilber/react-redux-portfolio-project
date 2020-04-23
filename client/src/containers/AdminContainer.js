@@ -1,5 +1,6 @@
 import React from 'react'
 import UsersContainer from './UsersContainer'
+import JobListingsContainer from './JobListingsContainer'
 import Tab from 'react-bootstrap/Tab'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -27,6 +28,7 @@ export default class AdminContainer extends React.Component {
 							</Tab.Pane>
 							<Tab.Pane eventKey="jobListings">
 								<h1>Edit Job Listings</h1>
+								<JobListingsContainer />
 							</Tab.Pane>
 						</Tab.Content>
 					</Col>
