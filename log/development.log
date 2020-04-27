@@ -14044,3 +14044,34 @@ Processing by JoblistingsController#destroy as */*
 Completed 200 OK in 28ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 4397)
 
 
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-27 15:00:52 -0600
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.4ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 6.5ms | ActiveRecord: 0.9ms | Allocations: 6605)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-27 15:00:58 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-27 15:00:58 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.1ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+Processing by UsersController#index as */*
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.1ms | Allocations: 1679)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 0.9ms | Allocations: 5014)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-27 15:01:00 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.1ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.1ms | Allocations: 1127)
+
+
