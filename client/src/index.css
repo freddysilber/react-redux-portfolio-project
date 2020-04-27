@@ -117,6 +117,9 @@ h4 {
 .carouselContainer {
 	font-family: BalooTamma2;
 }
+.carouselDescription {
+	color: white;
+}
 
 /* Centers spinner */
 .spinnerContainer {
