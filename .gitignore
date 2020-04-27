@@ -10,3 +10,5 @@
 !/log/.keep
 /log/*.log
 /tmp
+tmp
+log
