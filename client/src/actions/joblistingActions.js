@@ -11,7 +11,6 @@ export const getJobListings = () => {
 }
 // Creates a new job listing with the provided params
 export const createJobListing = (name, description, startDate, endDate) => {
-	console.log('C');
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
 		fetch(joblistingsUrl, {
@@ -32,11 +31,9 @@ export const createJobListing = (name, description, startDate, endDate) => {
 				//}
 				return response.json()})
 			.then(data =>{
-			    console.log('D');	
 				dispatch({ type: 'ADD_NEW_JOB_LISTING', jobListings: data })})
 			.catch(error => console.error('There was an error creating this job listing', error))
 	}
-	console.log('E');
 }
 
 // Edits the selected job listing with the new params
