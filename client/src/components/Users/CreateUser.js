@@ -7,6 +7,7 @@ export default class CreateUser extends React.Component {
 		super()
 		this.state = {
 			username: '',
+			email: '',
 			password: ''
 		}
 	}
@@ -19,9 +20,10 @@ export default class CreateUser extends React.Component {
 
 	handleSubmit = event => {
 		event.preventDefault()
-		this.props.createUser(this.state.username, this.state.password)
+		this.props.createUser(this.state.username, this.state.email, this.state.password)
 		this.setState({
 			username: '',
+			email: '',
 			password: ''
 		})
 	}
@@ -38,6 +40,10 @@ export default class CreateUser extends React.Component {
 					<Form.Group controlId="password">
 						<Form.Label>Password</Form.Label>
 						<Form.Control type="password" placeholder="password" name="password" autoComplete="current-password" onChange={this.handleChange} value={this.state.password} />
+					</Form.Group>
+					<Form.Group controlId="email">
+						<Form.Label>Email</Form.Label>
+						<Form.Control type="email" placeholder="email" name="email" autoComplete="current-email" onChange={this.handleChange} value={this.state.email} />
 					</Form.Group>
 					<Button type="submit">Submit</Button>
 				</Form>

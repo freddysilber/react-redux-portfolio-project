@@ -10,7 +10,7 @@ export const getUsers = () => {
 	}
 }
 
-export const createUser = (username, password) => {
+export const createUser = (username, email, password) => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
 		fetch(usersUrl, {
@@ -20,7 +20,8 @@ export const createUser = (username, password) => {
 			},
 			body: JSON.stringify({
 				'username': username,
-				'password': password
+				'email': email,
+				'password_digest': password
 			})
 		})
 			.then(response => response.json())
