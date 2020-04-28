@@ -5,7 +5,7 @@ export default class CovidLatestTotals extends React.Component {
 	render() {
 		const { confirmed, recovered, critical, deaths } = this.props.latestTotals
 		return (
-			<Card border="danger" className="latestTotalsCard">
+			<Card border="light" className="latestTotalsCard">
 				<Card.Header>World Wide</Card.Header>
 				<Card.Body>
 					<Card.Title>Latest Totals</Card.Title>
