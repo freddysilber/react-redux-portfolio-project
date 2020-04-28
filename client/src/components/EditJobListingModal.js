@@ -2,8 +2,10 @@ import React from 'react'
 import { Modal, Button, Form } from 'react-bootstrap'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css"
+import { editJobListing } from '../actions/joblistingActions'
+import { connect } from 'react-redux'
 
-export default class EditJobListingModal extends React.Component {
+class EditJobListingModal extends React.Component {
 	constructor() {
 		super()
 		this.state = {
@@ -79,3 +81,11 @@ export default class EditJobListingModal extends React.Component {
 		)
 	}
 }
+
+const mapStateToProps = state => {
+	return {
+		// jobListings: state.jobListings.jobListings,
+		loading: state.jobListings.loading
+	}
+}
+export default connect(mapStateToProps, { editJobListing })(EditJobListingModal)

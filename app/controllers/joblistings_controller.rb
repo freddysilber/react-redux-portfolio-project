@@ -5,31 +5,46 @@ class JoblistingsController < ApplicationController
 	end
 
 	def create
-		joblisting = Joblisting.create(
-			name: params[:name],
-			description: params[:description],
-			start_date: params[:start_date],
-			end_date: params[:end_date]
-		)
-		render json: JoblistingSerializer.new(joblisting)
+		joblisting = Joblisting.new(job_listing_params)
+		if joblisting.save
+			render json: JoblistingSerializer.new(joblisting)
+		else
+			raise 'ERROR'
+		end
 	end
 
 	def show
-		joblisting = Joblisting.find(
-			params[:id]
-		)
+		joblisting = Joblisting.find(params[:id])
 		render json: JoblistingSerializer.new(joblisting)
 	end
 
+	def update
+		joblisting = Joblisting.find(params[:id])
+		if joblisting.update(job_listing_params)
+			render json: JoblistingSerializer.new(joblisting)
+		else
+			raise 'there was an error'
+		end
+	end
+
 	def destroy
-		joblisting = Joblisting.find(
-			params[:id]
-		)
+		joblisting = Joblisting.find(params[:id])
 		unless joblisting.nil?
 			joblisting.destroy
 			render json: JoblistingSerializer.new(joblisting)
 		else
 			render json: {error: 'There was an error deleting this joblisting!'}
 		end
+	end
+
+	private
+	
+	def job_listing_params
+		params.require(:joblisting).permit(
+			:name,
+			:description,
+			:start_date,
+			:end_date
+		)
 	end
 end

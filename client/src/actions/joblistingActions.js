@@ -1,5 +1,5 @@
 const joblistingsUrl = 'api/joblistings'
-
+// Gets all the job listings from the database
 export const getJobListings = () => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
@@ -9,7 +9,7 @@ export const getJobListings = () => {
 			.catch(error => console.error(error))
 	}
 }
-
+// Creates a new job listing with the provided params
 export const createJobListing = (name, description, startDate, endDate) => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
@@ -30,7 +30,28 @@ export const createJobListing = (name, description, startDate, endDate) => {
 			.catch(error => console.error('There was an error creating this job listing', error))
 	}
 }
-
+// Edits the selected job listing with the new params
+export const editJobListing = (jobListingId, name, description, startDate, endDate) => {
+	return dispatch => {
+		dispatch({ type: 'LOADING_DATA' })
+		fetch(`${joblistingsUrl}/${jobListingId}`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				'name': name,
+				'description': description,
+				'start_date': startDate,
+				'end_date': endDate
+			})
+		})
+			.then(response => response.json())
+			.then(data => console.log(data))
+			.catch(error => console.error(error))
+	}
+}
+// Deletes the selected job listing from the database
 export const deleteJobListing = jobListingId => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })

@@ -1,5 +1,5 @@
 const usersUrl = 'api/users'
-
+// Gets all users from the database
 export const getUsers = () => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
@@ -9,7 +9,7 @@ export const getUsers = () => {
 			.catch(error => console.error('There was an error fetching users.', error))
 	}
 }
-
+// Creates a new user with the provided params
 export const createUser = (username, email, password) => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
@@ -29,7 +29,7 @@ export const createUser = (username, email, password) => {
 			.catch(error => console.error('There was an error creating the user.', error))
 	}
 }
-
+// Deletes the selected user from the database
 export const deleteUser = userId => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })

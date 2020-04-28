@@ -1,7 +1,5 @@
 import React from 'react'
-import Card from 'react-bootstrap/Card'
-import Modal from 'react-bootstrap/Modal'
-import { Button } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import EditJobListingModal from '../../components/EditJobListingModal'
 
 export default class JobListing extends React.Component {
