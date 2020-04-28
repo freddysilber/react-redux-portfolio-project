@@ -7,14 +7,15 @@ import { connect } from 'react-redux'
 import { getUsers, createUser, deleteUser } from '../actions/userActions'
 
 class UsersContainer extends React.Component {
+	// Fetch all users when container mounts
 	componentDidMount() {
 		this.props.getUsers()
 	}
-
+	// render users or spinner if loading
 	render() {
 		return this.handleLoading()
 	}
-
+	
 	handleLoading = () => {
 		if (this.props.loading) {
 			return (

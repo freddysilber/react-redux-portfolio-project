@@ -160,6 +160,9 @@ h4 {
 .latestTotalsCard, .countryCard {
 	background: white !important;
 }
+.card-header {
+	background: #FFD6A1 !important;
+}
 
 /* Dropdown */
 .dropdown {

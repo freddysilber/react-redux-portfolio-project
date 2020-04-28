@@ -1,22 +1,27 @@
 class SessionsController < ApplicationController
+
 	def new
-		raise 'new session'
+		raise 'New session'
 	end
   
 	def create
 	  user = User.find(params[:id])
 	  if user && user.authenticate(params[:password_digest])
 		session[:user_id] = user.id
-		redirect_to root_url, notice: "Logged in!"
+		raise session
+		# redirect_to root_url, notice: "Logged in!"
 	  else
-		flash.now[:alert] = "Email or password is invalid"
-		render "new"
+		raise 'Email or password is invalid'
+		# flash.now[:alert] = "Email or password is invalid"
+		# render "new"
 	  end
 	end
 	
 	def destroy
 	  session[:user_id] = nil
-	  redirect_to root_url, notice: "Logged out!"
+	  raise 'Session was destroyed'
+	#   redirect_to root_url, notice: "Logged out!"
 	end
+
   end
   

@@ -43,4 +43,5 @@ class UsersController < ApplicationController
 		  :password_digest
 		)
 	  end
+	  
 end

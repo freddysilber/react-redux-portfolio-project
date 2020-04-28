@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+	
 	protect_from_forgery with: :exception
 	helper_method :logged_in?
 	helper_method :current_user
@@ -8,7 +9,7 @@ class ApplicationController < ActionController::API
 	end
 
 	def current_user
-		# User.find_by(id: session[:user_id])
+		User.find_by(id: session[:user_id])
 		if session[:user_id]
 			@current_user ||= User.find(session[:user_id])
 		else
