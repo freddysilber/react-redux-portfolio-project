@@ -19154,3 +19154,152 @@ Processing by UsersController#create as */*
 Completed 200 OK in 31ms (Views: 1.7ms | ActiveRecord: 1.9ms | Allocations: 8307)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.5ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Marketing Orchestrator"], ["description", "Mining"], ["created_at", "2020-04-28 17:45:15.100391"], ["updated_at", "2020-04-28 17:45:15.100391"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Education Designer"], ["description", "Advertising"], ["created_at", "2020-04-28 17:45:15.105171"], ["updated_at", "2020-04-28 17:45:15.105171"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "National Administrator"], ["description", "Consulting"], ["created_at", "2020-04-28 17:45:15.108578"], ["updated_at", "2020-04-28 17:45:15.108578"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Senior Analyst"], ["description", "Real-Estate"], ["created_at", "2020-04-28 17:45:15.111986"], ["updated_at", "2020-04-28 17:45:15.111986"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:45:31 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 24.3ms | ActiveRecord: 1.0ms | Allocations: 7281)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:45:31 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:45:31 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+Processing by UsersController#index as */*
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.3ms | Allocations: 2486)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 30ms (Views: 18.7ms | ActiveRecord: 1.0ms | Allocations: 6795)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:45:33 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 1925)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.4ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Human Design Officer"], ["start_date", "2020-03-28"], ["end_date", "2020-05-18"], ["description", "Accounting"], ["created_at", "2020-04-28 17:47:45.541064"], ["updated_at", "2020-04-28 17:47:45.541064"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Banking Officer"], ["start_date", "2020-08-04"], ["end_date", "2020-02-14"], ["description", "Government"], ["created_at", "2020-04-28 17:47:45.546029"], ["updated_at", "2020-04-28 17:47:45.546029"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Investor Design Developer"], ["start_date", "2020-06-10"], ["end_date", "2020-11-17"], ["description", "Marketing"], ["created_at", "2020-04-28 17:47:45.549657"], ["updated_at", "2020-04-28 17:47:45.549657"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Regional Retail Executive"], ["start_date", "2020-12-08"], ["end_date", "2020-04-13"], ["description", "Community-Services"], ["created_at", "2020-04-28 17:47:45.552977"], ["updated_at", "2020-04-28 17:47:45.552977"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Consulting Executive"], ["start_date", "2020-08-20"], ["end_date", "2020-02-02"], ["description", "Marketing"], ["created_at", "2020-04-28 17:47:45.556615"], ["updated_at", "2020-04-28 17:47:45.556615"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.4ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dynamic Real-Estate Agent"], ["start_date", "2020-05-26"], ["end_date", "2020-11-13"], ["description", "Mining"], ["created_at", "2020-04-28 17:47:45.560861"], ["updated_at", "2020-04-28 17:47:45.560861"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:47:59 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.9ms | Allocations: 8265)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:48:06 -0600
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:48:06 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+Processing by UsersController#index as */*
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.2ms | Allocations: 4436)
+
+
+Completed 200 OK in 29ms (Views: 23.6ms | ActiveRecord: 0.7ms | Allocations: 7676)
+
+
+Started DELETE "/api/joblistings/3" for 127.0.0.1 at 2020-04-28 11:48:10 -0600
+Processing by JoblistingsController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings" WHERE "joblistings"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/joblistings_controller.rb:31:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/joblistings_controller.rb:33:in `destroy'
+  [1m[36mJoblisting Destroy (0.5ms)[0m  [1m[31mDELETE FROM "joblistings" WHERE "joblistings"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/joblistings_controller.rb:33:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/joblistings_controller.rb:33:in `destroy'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 1.8ms | Allocations: 2847)
+
+
+Started DELETE "/api/joblistings/2" for 127.0.0.1 at 2020-04-28 11:48:13 -0600
+Processing by JoblistingsController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mJoblisting Load (0.1ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings" WHERE "joblistings"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/joblistings_controller.rb:31:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/joblistings_controller.rb:33:in `destroy'
+  [1m[36mJoblisting Destroy (0.4ms)[0m  [1m[31mDELETE FROM "joblistings" WHERE "joblistings"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/joblistings_controller.rb:33:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/joblistings_controller.rb:33:in `destroy'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 2340)
+
+
+Started DELETE "/api/joblistings/4" for 127.0.0.1 at 2020-04-28 11:48:15 -0600
+Processing by JoblistingsController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings" WHERE "joblistings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/joblistings_controller.rb:31:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/joblistings_controller.rb:33:in `destroy'
+  [1m[36mJoblisting Destroy (0.4ms)[0m  [1m[31mDELETE FROM "joblistings" WHERE "joblistings"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/joblistings_controller.rb:33:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/joblistings_controller.rb:33:in `destroy'
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 3240)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:48:23 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 2506)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:48:24 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 2487)
+
+

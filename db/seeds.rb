@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+jobs = Joblisting.create([
+	{ name: Faker::Job.title, description: Faker::Job.field, start_date: Faker::Date.in_date_period, end_date: Faker::Date.in_date_period },
+	{ name: Faker::Job.title, description: Faker::Job.field, start_date: Faker::Date.in_date_period, end_date: Faker::Date.in_date_period },
+	{ name: Faker::Job.title, description: Faker::Job.field, start_date: Faker::Date.in_date_period, end_date: Faker::Date.in_date_period },
+	{ name: Faker::Job.title, description: Faker::Job.field, start_date: Faker::Date.in_date_period, end_date: Faker::Date.in_date_period },
+	{ name: Faker::Job.title, description: Faker::Job.field, start_date: Faker::Date.in_date_period, end_date: Faker::Date.in_date_period },
+	{ name: Faker::Job.title, description: Faker::Job.field, start_date: Faker::Date.in_date_period, end_date: Faker::Date.in_date_period }
+])
