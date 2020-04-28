@@ -17,18 +17,17 @@ gem 'puma', '~> 4.1'
 gem 'bcrypt', '~> 3.1.7'
 # Use Json Web Token (JWT) for token based authentication
 gem 'jwt'
-
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
 # Foreman - utility for managing multiple processes.
 gem 'foreman', '~> 0.87.1'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-
+#  Use faker for generating fake data
 gem 'faker'
+# Use fast_jsonapi to parse controllers into json for JS
 gem 'fast_jsonapi'
+# Use pry for debugging ruby
 gem 'pry'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'

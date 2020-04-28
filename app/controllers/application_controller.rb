@@ -15,7 +15,10 @@ class ApplicationController < ActionController::API
 	# 		@current_user = nil
 	# 	end
 	# end
+
+
 	
+
 	# def not_found
 	# 	render json: { error: 'not_found' }
 	# end

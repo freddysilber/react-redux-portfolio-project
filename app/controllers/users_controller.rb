@@ -9,9 +9,7 @@ class UsersController < ApplicationController
 	def create
 		user = User.new(user_params)
 		if user.save
-			# session[:user_id] = user.id
 			render json: UserSerializer.new(user)
-			# raise session
 		else
 			raise user.errors
 			render json: UserSerializer.new(user.errors)
