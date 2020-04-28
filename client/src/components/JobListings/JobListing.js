@@ -7,9 +7,7 @@ import EditJobListingModal from '../../components/EditJobListingModal'
 export default class JobListing extends React.Component {
 	constructor() {
 		super()
-		this.state = {
-			showModal: false
-		}
+		this.state = { showModal: false }
 	}
 	// Deletes the selected job listing
 	handleClick = () => this.props.deleteJobListing(this.props.jobListing.id)
