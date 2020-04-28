@@ -5,7 +5,6 @@ export default class Users extends React.Component {
 
 	render() {
 		const { users, deleteUser } = this.props
-		console.log(users)
 		const userList = users.map(user => <User key={user.id} user={user} deleteUser={deleteUser} />)
 		return userList
 	}

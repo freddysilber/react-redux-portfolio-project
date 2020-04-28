@@ -2,7 +2,7 @@ import React from 'react'
 import { Modal, Button, Form } from 'react-bootstrap'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css"
-import { editJobListing } from '../actions/joblistingActions'
+import { editJobListing } from '../../actions/joblistingActions'
 import { connect } from 'react-redux'
 
 class EditJobListingModal extends React.Component {
@@ -15,19 +15,19 @@ class EditJobListingModal extends React.Component {
 			endDate: ''
 		}
 	}
-
+	// Updates state with name and description
 	handleChange = event => {
 		this.setState({
 			[event.target.name]: event.target.value
 		})
 	}
-
+	// Updates state with start date
 	handleStartDateChange = event => {
 		this.setState({
 			startDate: event
 		})
 	}
-
+	// Updates state with end date
 	handleEndDateChange = event => {
 		this.setState({
 			endDate: event
@@ -52,24 +52,24 @@ class EditJobListingModal extends React.Component {
 			<Modal show={this.props.show} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
 				<Form onSubmit={this.handleSubmit}>
 					<Modal.Header >
-						<Modal.Title id="contained-modal-title-vcenter">Edit Job Listing</Modal.Title>
+						<Modal.Title id="contained-modal-title-vcenter">Edit Job Listing: {name}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
 						<Form.Group controlId="name">
 							<Form.Label>Name</Form.Label>
-							<Form.Control type="text" placeholder={name} name="name" autoComplete="name" onChange={this.handleChange} value={this.state.name} />
+							<Form.Control type="text" name="name" autoComplete="name" onChange={this.handleChange} defaultValue={name} />
 						</Form.Group>
 						<Form.Group controlId="description">
 							<Form.Label>Description</Form.Label>
-							<Form.Control type="text" placeholder={description} name="description" autoComplete="description" onChange={this.handleChange} value={this.state.description} />
+							<Form.Control type="text" name="description" autoComplete="description" onChange={this.handleChange} defaultValue={description} />
 						</Form.Group>
 						<Form.Group controlId="startDate">
 							<Form.Label>Start Date</Form.Label>
-							<DatePicker placeholderText={start_date} selected={this.state.startDate} onChange={this.handleStartDateChange} />
+							<DatePicker selected={this.state.startDate} onChange={this.handleStartDateChange} value={start_date} />
 						</Form.Group>
 						<Form.Group controlId="startDate">
 							<Form.Label>End Date</Form.Label>
-							<DatePicker placeholderText={end_date} selected={this.state.endDate} onChange={this.handleEndDateChange} />
+							<DatePicker selected={this.state.endDate} onChange={this.handleEndDateChange} value={end_date} />
 						</Form.Group>
 					</Modal.Body>
 					<Modal.Footer>
@@ -82,10 +82,4 @@ class EditJobListingModal extends React.Component {
 	}
 }
 
-const mapStateToProps = state => {
-	return {
-		jobListings: state.jobListings.jobListings,
-		loading: state.jobListings.loading
-	}
-}
-export default connect(mapStateToProps, { editJobListing })(EditJobListingModal)
+export default connect(null, { editJobListing })(EditJobListingModal)

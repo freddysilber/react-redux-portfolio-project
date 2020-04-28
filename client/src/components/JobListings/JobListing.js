@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import EditJobListingModal from '../../components/EditJobListingModal'
+import EditJobListingModal from '../../components/JobListings/EditJobListingModal'
 
 export default class JobListing extends React.Component {
 	constructor() {
