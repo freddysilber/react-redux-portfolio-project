@@ -9,15 +9,46 @@ export default class EditJobListingModal extends React.Component {
 		this.state = {
 			name: '',
 			description: '',
-			starDate: '',
+			startDate: '',
 			endDate: ''
 		}
 	}
+
+	handleChange = event => {
+		this.setState({
+			[event.target.name]: event.target.value
+		})
+	}
+
+	handleStartDateChange = event => {
+		this.setState({
+			startDate: event
+		})
+	}
+
+	handleEndDateChange = event => {
+		this.setState({
+			endDate: event
+		})
+	}
+
+	handleSubmit = event => {
+		event.preventDefault()
+		console.log('submit form', this.state)
+		this.setState({
+			name: '',
+			description: '',
+			startDate: '',
+			endDate: ''
+		})
+	}
+
 	render() {
+		console.log(this.props.jobListing.id)
 		const { name, description, start_date, end_date } = this.props.jobListing
 		return (
-			<Form onSubmit={this.handleSubmit}>
-				<Modal show={this.props.show} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+			<Modal show={this.props.show} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+				<Form onSubmit={this.handleSubmit}>
 					<Modal.Header >
 						<Modal.Title id="contained-modal-title-vcenter">Edit Job Listing</Modal.Title>
 					</Modal.Header>
@@ -43,8 +74,8 @@ export default class EditJobListingModal extends React.Component {
 						<Button type="submit">Submit</Button>
 						<Button onClick={this.props.hide}>Close</Button>
 					</Modal.Footer>
-				</Modal >
-			</Form>
+				</Form>
+			</Modal >
 		)
 	}
 }
