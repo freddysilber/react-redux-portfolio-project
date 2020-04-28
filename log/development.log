@@ -18891,3 +18891,19 @@ Processing by UsersController#index as */*
 Completed 200 OK in 23ms (Views: 17.5ms | ActiveRecord: 1.2ms | Allocations: 6379)
 
 
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 10:40:18 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 10:40:18 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as */*
+Processing by JoblistingsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  ↳ app/controllers/joblistings_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 3013)
+
+
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.4ms | Allocations: 2566)
+
+
