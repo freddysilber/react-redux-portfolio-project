@@ -40,7 +40,7 @@ export default class JobListing extends React.Component {
 							<Card.Text>Description: {description}</Card.Text>
 						</Card.Body>
 					</Card>
-					<EditJobListingModal show={this.state.showModal} hide={this.handleClose} />
+					<EditJobListingModal show={this.state.showModal} hide={this.handleClose} jobListing={this.props.jobListing.attributes} />
 				</>
 			)
 		}
