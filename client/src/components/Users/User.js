@@ -9,7 +9,7 @@ export default class User extends React.Component {
 		return (
 			<Card body>
 				<i className="fas fa-times" style={{ float: 'right', color: '#FF6200' }} onClick={() => this.handleClick()}></i>
-				<h4>{user.id} - {user.attributes.username}</h4>
+				<h4>{user.id} - {user.attributes.username} - {user.attributes.email}</h4>
 			</Card>
 		)
 	}

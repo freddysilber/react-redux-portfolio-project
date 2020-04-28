@@ -11,6 +11,7 @@ class UsersController < ApplicationController
 		if user.save
 			session[:user_id] = user.id
 			render json: UserSerializer.new(user)
+			# raise session
 		else
 			render json: UserSerializer.new(user.errors)
 		end
