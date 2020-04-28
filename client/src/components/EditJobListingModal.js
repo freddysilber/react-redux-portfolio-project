@@ -36,7 +36,8 @@ class EditJobListingModal extends React.Component {
 
 	handleSubmit = event => {
 		event.preventDefault()
-		console.log('submit form', this.state)
+		const { name, description, startDate, endDate } = this.state
+		this.props.editJobListing(this.props.jobListing.id, name, description, startDate, endDate)
 		this.setState({
 			name: '',
 			description: '',
@@ -46,7 +47,6 @@ class EditJobListingModal extends React.Component {
 	}
 
 	render() {
-		console.log(this.props.jobListing.id)
 		const { name, description, start_date, end_date } = this.props.jobListing
 		return (
 			<Modal show={this.props.show} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
@@ -84,7 +84,7 @@ class EditJobListingModal extends React.Component {
 
 const mapStateToProps = state => {
 	return {
-		// jobListings: state.jobListings.jobListings,
+		jobListings: state.jobListings.jobListings,
 		loading: state.jobListings.loading
 	}
 }

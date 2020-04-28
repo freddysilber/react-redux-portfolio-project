@@ -35,7 +35,7 @@ export const editJobListing = (jobListingId, name, description, startDate, endDa
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
 		fetch(`${joblistingsUrl}/${jobListingId}`, {
-			method: 'POST',
+			method: 'PATCH',
 			headers: {
 				'Content-Type': 'application/json'
 			},
@@ -47,8 +47,8 @@ export const editJobListing = (jobListingId, name, description, startDate, endDa
 			})
 		})
 			.then(response => response.json())
-			.then(data => console.log(data))
-			.catch(error => console.error(error))
+			.then(data => dispatch({ type: 'ADD_NEW_JOB_LISTING', jobListings: data }))
+			.catch(error => console.error('There was an error updating this job listing', error))
 	}
 }
 // Deletes the selected job listing from the database
