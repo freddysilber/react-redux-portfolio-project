@@ -14,3 +14,13 @@ jobs = Joblisting.create([
 	{ name: Faker::Job.title, description: Faker::Job.field, start_date: Faker::Date.in_date_period, end_date: Faker::Date.in_date_period },
 	{ name: Faker::Job.title, description: Faker::Job.field, start_date: Faker::Date.in_date_period, end_date: Faker::Date.in_date_period }
 ])
+
+users = User.create([
+	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
+	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
+	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
+	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
+	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
+	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
+	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
+])
