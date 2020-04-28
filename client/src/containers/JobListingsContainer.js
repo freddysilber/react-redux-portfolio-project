@@ -1,5 +1,5 @@
 import React from 'react'
-import Spinner from 'react-bootstrap/Spinner'
+import { Spinner } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { getJobListings, createJobListing, deleteJobListing } from '../actions/joblistingActions'
 import CreateJobListing from '../components/JobListings/CreateJobListing'

@@ -1,5 +1,5 @@
 import React from 'react'
-import Dropdown from 'react-bootstrap/Dropdown'
+import {Dropdown} from 'react-bootstrap'
 
 export default class CovidCountries extends React.Component {
 	render() {

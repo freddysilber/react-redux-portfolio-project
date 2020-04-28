@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import { Radar, RadarChart, PolarGrid, Legend, PolarAngleAxis, PolarRadiusAxis } from 'recharts'
 
-export default class Example extends PureComponent {
+export default class CovidDataChart extends PureComponent {
 	getDataFromProps = () => {
 		const { confirmed, recovered, critical, deaths } = this.props.latestTotals
 		let data = [

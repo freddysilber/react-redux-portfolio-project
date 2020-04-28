@@ -1,7 +1,6 @@
 import React from 'react'
 import SocialMediaIcons from './SocialMediaIcons'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Image from 'react-bootstrap/Image'
+import { Jumbotron, Image } from 'react-bootstrap'
 import cloudcoach from '../pictures/cloudcoach.jpg'
 
 const Bio = () => {

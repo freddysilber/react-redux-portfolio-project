@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel from 'react-bootstrap/Carousel'
+import { Carousel } from 'react-bootstrap'
 import squareTopLakes from '../pictures/squareTopLakes.jpeg'
 import sunset from '../pictures/sunset.jpeg'
 import londonTower from '../pictures/londonTower.jpeg'

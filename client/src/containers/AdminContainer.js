@@ -1,10 +1,7 @@
 import React from 'react'
 import UsersContainer from './UsersContainer'
 import JobListingsContainer from './JobListingsContainer'
-import Tab from 'react-bootstrap/Tab'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Nav from 'react-bootstrap/Nav'
+import { Tab, Row, Col, Nav } from 'react-bootstrap'
 
 export default class AdminContainer extends React.Component {
 	render() {

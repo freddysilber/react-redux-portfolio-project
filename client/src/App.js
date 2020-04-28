@@ -1,11 +1,11 @@
 import React from 'react'
-import Navigation from './components/Navigation'
-import CovidContainer from './containers/CovidContainer'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import PortfolioProjectContainer from './containers/PorfolioProjectsContainer'
-import HomeContainer from './containers/HomeContainer'
-import ResumeContainer from './containers/ResumeContainer'
 import AdminContainer from './containers/AdminContainer'
+import CovidContainer from './containers/CovidContainer'
+import HomeContainer from './containers/HomeContainer'
+import PortfolioProjectContainer from './containers/PorfolioProjectsContainer'
+import ResumeContainer from './containers/ResumeContainer'
+import Navigation from './components/Navigation'
 
 export default class App extends React.Component {
   render() {

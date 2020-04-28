@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Spinner from 'react-bootstrap/Spinner'
+import { Spinner } from 'react-bootstrap'
 import Users from '../components/Users/Users'
 import CreateUser from '../components/Users/CreateUser'
 import { connect } from 'react-redux'

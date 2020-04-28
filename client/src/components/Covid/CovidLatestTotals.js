@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from 'react-bootstrap/Card'
+import { Card } from 'react-bootstrap'
 
 export default class CovidLatestTotals extends React.Component {
 	render() {
