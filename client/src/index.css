@@ -161,6 +161,12 @@ h4 {
 	background: white !important;
 }
 
+/* Dropdown */
 .dropdown {
 	padding: .25rem !important;
+	float: right;
+}
+.dropdown-menu {
+	max-height: 85vh;
+	overflow: scroll;
 }
