@@ -1,11 +1,14 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Button } from 'react-bootstrap'
 import EditJobListingModal from '../../components/JobListings/EditJobListingModal'
 
 export default class JobListing extends React.Component {
 	constructor() {
 		super()
-		this.state = { showModal: false }
+		this.state = {
+			showModal: false,
+			votes: 0
+		}
 	}
 	// Deletes the selected job listing
 	handleClick = () => this.props.deleteJobListing(this.props.jobListing.id)
@@ -13,6 +16,13 @@ export default class JobListing extends React.Component {
 	handleEdit = () => { this.setState({ showModal: true }) }
 	// Closes edit modal
 	handleClose = () => { this.setState({ showModal: false }) }
+	// hanlde upvote jobitem
+	handleUpvote = () => {
+		const addvote = this.state.votes + 1
+		this.setState({
+			votes: addvote
+		})
+	}
 	// Renders read-only card or editeable/deleteable card
 	renderCard = () => {
 		const { name, description, start_date, end_date } = this.props.jobListing.attributes
@@ -36,7 +46,9 @@ export default class JobListing extends React.Component {
 							<Card.Title>Job: {name}</Card.Title>
 							<Card.Subtitle className="mb-2 text-muted">Start Date: {start_date} - End Date: {end_date}</Card.Subtitle>
 							<Card.Text>Description: {description}</Card.Text>
+							<Card.Text>Votes: {this.state.votes}</Card.Text>
 						</Card.Body>
+						<Button onClick={this.handleUpvote}>Upvote</Button>
 					</Card>
 					<EditJobListingModal show={this.state.showModal} hide={this.handleClose} jobListing={this.props.jobListing.attributes} />
 				</>

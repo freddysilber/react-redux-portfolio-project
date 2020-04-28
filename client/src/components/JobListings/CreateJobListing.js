@@ -32,10 +32,12 @@ export default class CreateJobListing extends React.Component {
 		})
 	}
 
-	handleSubmit = event => {
+	handleSubmit = event => { // ACBD
 		event.preventDefault()
 		const { name, description, startDate, endDate } = this.state
+		console.log('A');
 		this.props.createJobListing(name, description, startDate, endDate)
+		console.log('B');
 		this.setState({
 			name: '',
 			description: '',
