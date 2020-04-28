@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-
 	def new
 		raise 'New session'
 	end
@@ -22,6 +21,5 @@ class SessionsController < ApplicationController
 	  raise 'Session was destroyed'
 	#   redirect_to root_url, notice: "Logged out!"
 	end
-
   end
   

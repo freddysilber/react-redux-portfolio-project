@@ -1,5 +1,4 @@
 class JoblistingsController < ApplicationController
-	
 	def index
 		joblistings = Joblisting.all
 		render json: JoblistingSerializer.new(joblistings)
@@ -48,5 +47,4 @@ class JoblistingsController < ApplicationController
 			:end_date
 		)
 	end
-
 end

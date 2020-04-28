@@ -18907,3 +18907,172 @@ Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 3013
 Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.4ms | Allocations: 2566)
 
 
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:25:35 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:25:35 -0600
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:25:45 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:25:45 -0600
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:26:05 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as */*
+Processing by UsersController#index as */*
+Processing by JoblistingsController#index as */*
+Processing by JoblistingsController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mJoblisting Load (0.4ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  [1m[36mJoblisting Load (0.1ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.6ms | Allocations: 7872)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.4ms | Allocations: 9653)
+
+
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 29ms (Views: 17.5ms | ActiveRecord: 0.8ms | Allocations: 17506)
+
+
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:26:06 -0600
+Completed 200 OK in 24ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 17197)
+
+
+Completed 200 OK in 29ms (Views: 13.7ms | ActiveRecord: 0.1ms | Allocations: 19349)
+
+
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1387)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2020-04-28 11:26:28 -0600
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"person1", "email"=>"p@gmail.com", "password_digest"=>"[FILTERED]", "user"=>{"username"=>"person1", "email"=>"p@gmail.com", "password_digest"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "p@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "person1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.7ms | Allocations: 186808)
+
+
+  
+FastJsonapi::MandatoryField (id is a mandatory field in the jsonapi spec):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:26:52 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:26:52 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms | Allocations: 2534)
+
+
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 2473)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2020-04-28 11:27:04 -0600
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"person", "email"=>"p@gmail.com", "password_digest"=>"[FILTERED]", "user"=>{"username"=>"person", "email"=>"p@gmail.com", "password_digest"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "p@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "person"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms | Allocations: 4122)
+
+
+  
+FastJsonapi::MandatoryField (id is a mandatory field in the jsonapi spec):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:28:02 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:28:02 -0600
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:28:14 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:28:14 -0600
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:28:36 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+Processing by JoblistingsController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Processing by UsersController#index as */*
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.6ms | Allocations: 6434)
+
+
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.6ms | Allocations: 13259)
+
+
+Processing by UsersController#index as */*
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 12955)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:28:36 -0600
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 3413)
+
+
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 3939)
+
+
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1387)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2020-04-28 11:28:56 -0600
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"amigo", "email"=>"amigo@gmail.com", "password_digest"=>"[FILTERED]", "user"=>{"username"=>"amigo", "email"=>"amigo@gmail.com", "password_digest"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "amigo@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "amigo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms | Allocations: 3892)
+
+
+  
+TypeError (exception class/object expected):
+  
+app/controllers/users_controller.rb:16:in `raise'
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:29:34 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:29:34 -0600
