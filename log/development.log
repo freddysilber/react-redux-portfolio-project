@@ -19353,3 +19353,103 @@ Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 3504
 Completed 200 OK in 32ms (Views: 26.5ms | ActiveRecord: 1.1ms | Allocations: 9292)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.4ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Administration Developer"], ["start_date", "2020-07-22"], ["end_date", "2020-09-07"], ["description", "Marketing"], ["created_at", "2020-04-28 17:53:04.426178"], ["updated_at", "2020-04-28 17:53:04.426178"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Human Architect"], ["start_date", "2020-05-27"], ["end_date", "2020-10-31"], ["description", "IT"], ["created_at", "2020-04-28 17:53:04.430945"], ["updated_at", "2020-04-28 17:53:04.430945"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Marketing Specialist"], ["start_date", "2020-09-06"], ["end_date", "2020-09-05"], ["description", "Mining"], ["created_at", "2020-04-28 17:53:04.434436"], ["updated_at", "2020-04-28 17:53:04.434436"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Consulting Associate"], ["start_date", "2020-04-23"], ["end_date", "2020-12-08"], ["description", "Technology"], ["created_at", "2020-04-28 17:53:04.437937"], ["updated_at", "2020-04-28 17:53:04.437937"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Government Specialist"], ["start_date", "2020-09-22"], ["end_date", "2020-08-20"], ["description", "Marketing"], ["created_at", "2020-04-28 17:53:04.441411"], ["updated_at", "2020-04-28 17:53:04.441411"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Direct Legal Analyst"], ["start_date", "2020-09-18"], ["end_date", "2020-04-29"], ["description", "Advertising"], ["created_at", "2020-04-28 17:53:04.444750"], ["updated_at", "2020-04-28 17:53:04.444750"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ta.smith@gleichnervolkman.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Space Ghost"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Space Ghost"], ["email", "ta.smith@gleichnervolkman.info"], ["password_digest", "$2a$12$OXPt8YtqTOfhYiuscoLzHebtNoHEC0TycwWZWXYW2scV2.83Fva2."], ["created_at", "2020-04-28 17:53:04.711264"], ["updated_at", "2020-04-28 17:53:04.711264"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.4ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Human Healthcare Officer"], ["start_date", "2020-09-01"], ["end_date", "2020-01-09"], ["description", "Administration"], ["created_at", "2020-04-28 17:53:52.801362"], ["updated_at", "2020-04-28 17:53:52.801362"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Design Assistant"], ["start_date", "2020-09-24"], ["end_date", "2020-03-30"], ["description", "Farming"], ["created_at", "2020-04-28 17:53:52.806426"], ["updated_at", "2020-04-28 17:53:52.806426"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Lead Advertising Administrator"], ["start_date", "2020-01-28"], ["end_date", "2020-10-22"], ["description", "Education"], ["created_at", "2020-04-28 17:53:52.809983"], ["updated_at", "2020-04-28 17:53:52.809983"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Government Representative"], ["start_date", "2020-11-24"], ["end_date", "2020-10-10"], ["description", "IT"], ["created_at", "2020-04-28 17:53:52.813421"], ["updated_at", "2020-04-28 17:53:52.813421"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Marketing Executive"], ["start_date", "2020-10-02"], ["end_date", "2020-06-23"], ["description", "Administration"], ["created_at", "2020-04-28 17:53:52.816875"], ["updated_at", "2020-04-28 17:53:52.816875"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mJoblisting Create (0.3ms)[0m  [1m[32mINSERT INTO "joblistings" ("name", "start_date", "end_date", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Retail Agent"], ["start_date", "2020-02-15"], ["end_date", "2020-09-26"], ["description", "Design"], ["created_at", "2020-04-28 17:53:52.820242"], ["updated_at", "2020-04-28 17:53:52.820242"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mireya@hoegerjohns.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Agent Hyperion Wolf"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Agent Hyperion Wolf"], ["email", "mireya@hoegerjohns.info"], ["password_digest", "$2a$12$wxYsljSSkb/XX40e9TlAYutBE9PVzlg1ALnUQTt3G5EbjsaBq.ISO"], ["created_at", "2020-04-28 17:53:53.069151"], ["updated_at", "2020-04-28 17:53:53.069151"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mammie@prohaskaauer.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Cerebra"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Cerebra"], ["email", "mammie@prohaskaauer.name"], ["password_digest", "$2a$12$N755edVvNyc.eMomBDlvEegiIp9NdnsOzPVm.MhRhP88d5C//IBCe"], ["created_at", "2020-04-28 17:53:53.309724"], ["updated_at", "2020-04-28 17:53:53.309724"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "patience@considine.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "The Nina Theroux Dragon"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "The Nina Theroux Dragon"], ["email", "patience@considine.biz"], ["password_digest", "$2a$12$bv5qvVaL9MQ8/Ku09YUaxuA8pqcOed.RaxodRYWp5nHuH9kNWGZGO"], ["created_at", "2020-04-28 17:53:53.549309"], ["updated_at", "2020-04-28 17:53:53.549309"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "melvin@langosh.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Joker Dragon"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Joker Dragon"], ["email", "melvin@langosh.org"], ["password_digest", "$2a$12$6ogFijGQYaYP0bpFX6l1ieqeJlgI9B1/aIJKA1nmpxvHdxjmHjNeO"], ["created_at", "2020-04-28 17:53:53.789928"], ["updated_at", "2020-04-28 17:53:53.789928"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "terrell.schinner@bayer.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Red Thundra Brain"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Red Thundra Brain"], ["email", "terrell.schinner@bayer.name"], ["password_digest", "$2a$12$CXIIpTnBfbq5cjPLm9meqOxd5x75/4LBE0pHorROHi4TjTQFOiD5u"], ["created_at", "2020-04-28 17:53:54.030948"], ["updated_at", "2020-04-28 17:53:54.030948"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hosea@mclaughlin.info"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "General Meteorite Knight"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "General Meteorite Knight"], ["email", "hosea@mclaughlin.info"], ["password_digest", "$2a$12$Qb6ZBqRS6OJMkZIJ4e9U5.K6DHeR8gcX5SSkP8J0RcsQ/3QRfUMUm"], ["created_at", "2020-04-28 17:53:54.271379"], ["updated_at", "2020-04-28 17:53:54.271379"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "samantha_waters@trantow.name"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Agent Gladiator"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Agent Gladiator"], ["email", "samantha_waters@trantow.name"], ["password_digest", "$2a$12$uZ7OWfZ1LvkV0b3BS5r25eOuioK0Wziii42xuLyFMJNXJFTZVCDZW"], ["created_at", "2020-04-28 17:53:54.510583"], ["updated_at", "2020-04-28 17:53:54.510583"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-28 11:54:11 -0600
+Started GET "/api/users" for 127.0.0.1 at 2020-04-28 11:54:11 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.8ms | Allocations: 11185)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.8ms | Allocations: 6826)
+
+

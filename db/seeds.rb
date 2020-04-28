@@ -16,11 +16,11 @@ jobs = Joblisting.create([
 ])
 
 users = User.create([
-	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
-	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
-	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
-	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
-	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
-	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
-	username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4),
+	{username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4)},
+	{username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4)},
+	{username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4)},
+	{username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4)},
+	{username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4)},
+	{username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4)},
+	{username: Faker::Superhero.name, email: Faker::Internet.email, password: Faker::String.random(length: 4)},
 ])
