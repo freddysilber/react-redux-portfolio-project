@@ -20249,3 +20249,17 @@ Processing by JoblistingsController#index as */*
 Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 5598)
 
 
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:42:09 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 5598)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:42:12 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 5598)
+
+
