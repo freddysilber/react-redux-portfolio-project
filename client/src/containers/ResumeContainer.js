@@ -22,12 +22,7 @@ class ResumeContainer extends React.Component {
 				</div>
 			)
 		} else {
-			return (
-				<>
-					<iframe src="https://freddysilber.github.io/" width="100%" height="100%" />
-					<JobListings jobListings={this.props.jobListings} readOnly={true} />
-				</>
-			)
+			return <JobListings jobListings={this.props.jobListings} readOnly={true} />
 		}
 	}
 }

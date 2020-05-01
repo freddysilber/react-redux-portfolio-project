@@ -6,6 +6,7 @@ import HomeContainer from './containers/HomeContainer'
 import PortfolioProjectContainer from './containers/PorfolioProjectsContainer'
 import ResumeContainer from './containers/ResumeContainer'
 import Navigation from './components/Navigation'
+import Blog from './components/Blog'
 
 export default class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ export default class App extends React.Component {
           <Route path="/portfolioprojects" component={PortfolioProjectContainer} />
           <Route path="/covid19" component={CovidContainer} />
           <Route path="/admin" component={AdminContainer} />
+          <Route path="/blog" component={Blog} />
         </Switch>
       </Router>
     )
