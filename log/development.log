@@ -20629,3 +20629,143 @@ Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 3113)
 Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 7614)
 
 
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 19:06:48 -0600
+Started GET "/api/users" for 127.0.0.1 at 2020-04-30 19:06:48 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+Processing by UsersController#index as */*
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms | Allocations: 6062)
+
+
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 7030)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-30 19:06:55 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 19:06:55 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Processing by JoblistingsController#index as */*
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 2776)
+
+
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 7176)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-30 19:06:57 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 19:06:57 -0600
+Processing by UsersController#index as */*
+Processing by JoblistingsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 3113)
+
+
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.2ms | Allocations: 7597)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-30 19:07:16 -0600
+Processing by UsersController#index as */*
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 19:07:16 -0600
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 2190)
+
+
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 5598)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-30 19:07:22 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 19:07:22 -0600
+Processing by UsersController#index as */*
+Processing by JoblistingsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mJoblisting Load (0.4ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 3113)
+
+
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.4ms | Allocations: 7775)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-30 19:07:32 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 2170)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 19:07:32 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 5598)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-30 19:07:38 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 19:07:38 -0600
+Processing by JoblistingsController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 6399)
+
+
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 7472)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-30 19:07:49 -0600
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.6ms | Allocations: 2170)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 19:07:49 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 5598)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-04-30 19:08:16 -0600
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 19:08:16 -0600
+Processing by UsersController#index as */*
+Processing by JoblistingsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mJoblisting Load (0.1ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 2511)
+
+
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.1ms | Allocations: 7775)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 19:08:28 -0600
+Started GET "/api/users" for 127.0.0.1 at 2020-04-30 19:08:28 -0600
+Processing by JoblistingsController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mJoblisting Load (0.4ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.4ms | Allocations: 7455)
+
+
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.4ms | Allocations: 6399)
+
+

@@ -15,7 +15,7 @@ class UsersContainer extends React.Component {
 	render() {
 		return this.handleLoading()
 	}
-	
+
 	handleLoading = () => {
 		if (this.props.loading) {
 			return (
@@ -26,6 +26,7 @@ class UsersContainer extends React.Component {
 		} else {
 			return (
 				<>
+					<h1>Create Users</h1>
 					<CreateUser createUser={this.props.createUser} />
 					<Users users={this.props.users} deleteUser={this.props.deleteUser} />
 				</>
