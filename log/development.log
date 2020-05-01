@@ -20263,3 +20263,80 @@ Processing by JoblistingsController#index as */*
 Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 5598)
 
 
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:43:30 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 5598)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:44:21 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.4ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms | Allocations: 5598)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:44:27 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 5598)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:44:52 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 5598)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:45:09 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 5598)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:45:38 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.4ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.4ms | Allocations: 5598)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:45:49 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.4ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.4ms | Allocations: 5601)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:46:00 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 5598)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:46:16 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.2ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 5598)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:46:17 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 5598)
+
+
+Started GET "/api/joblistings" for 127.0.0.1 at 2020-04-30 18:46:26 -0600
+Processing by JoblistingsController#index as */*
+  [1m[36mJoblisting Load (0.3ms)[0m  [1m[34mSELECT "joblistings".* FROM "joblistings"[0m
+  ↳ app/controllers/joblistings_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 5598)
+
+
