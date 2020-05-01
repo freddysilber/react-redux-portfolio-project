@@ -11,8 +11,8 @@ const Navigation = () => {
 			<NavLink to='/resume' className="navLink" activeStyle={{ color: '#FFD6A1', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faBriefcase} /></NavLink>
 			<NavLink to='/portfolioprojects' className="navLink" activeStyle={{ color: '#FFD6A1', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faGithub} /></NavLink>
 			<NavLink to='/covid19' className="navLink" activeStyle={{ color: '#FFD6A1', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faVirus} /></NavLink>
-			<NavLink to='/admin' className="navLink" activeStyle={{ color: '#FFD6A1', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faCogs} /></NavLink>
 			<NavLink to='/blog' className="navLink" activeStyle={{ color: '#FFD6A1', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faBlog} /></NavLink>
+			<NavLink to='/admin' className="navLink" activeStyle={{ color: '#FFD6A1', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faCogs} /></NavLink>
 		</div>
 	)
 }
