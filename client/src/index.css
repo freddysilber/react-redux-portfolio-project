@@ -65,7 +65,7 @@ linkedinIcon {
 	transition: .3s;
 }
 .navLink:hover {
-	color: #90BDDC;
+	color: #00D2A9;
 	text-decoration: none;
 	transition: .3s;
 }
@@ -77,12 +77,6 @@ linkedinIcon {
 .nav-link.active {
 	background-color: #5C534D !important;
 }
-.nav-link:hover {
-	transition: .3s;
-	color:#FFD6A1;
-	opacity: .95;
-}
-
 /* Bio Css */
 .bio {
 	margin: 0rem 1rem;
