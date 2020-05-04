@@ -1,11 +1,12 @@
+import axios from 'axios'
+
 const joblistingsUrl = 'api/joblistings'
 // Gets all the job listings from the database
 export const getJobListings = () => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
-		fetch(joblistingsUrl)
-			.then(response => response.json())
-			.then(data => dispatch({ type: 'ADD_JOB_LISTINGS', jobListings: data.data }))
+		axios.get(joblistingsUrl)
+			.then(data => dispatch({ type: 'ADD_JOB_LISTINGS', jobListings: data.data.data }))
 			.catch(error => console.error(error))
 	}
 }
@@ -29,9 +30,11 @@ export const createJobListing = (name, description, startDate, endDate) => {
 				//if (!response.ok) {
 				//	throw new Error(response)
 				//}
-				return response.json()})
-			.then(data =>{
-				dispatch({ type: 'ADD_NEW_JOB_LISTING', jobListings: data })})
+				return response.json()
+			})
+			.then(data => {
+				dispatch({ type: 'ADD_NEW_JOB_LISTING', jobListings: data })
+			})
 			.catch(error => console.error('There was an error creating this job listing', error))
 	}
 }
