@@ -1,11 +1,10 @@
 import { githubBaseUrl } from '../data/githubData'
+import axios from 'axios'
 
 export const fetchRepositories = () => {
 	return (dispatch) => {
 		dispatch({ type: 'LOADING_DATA' })
-		fetch(githubBaseUrl)
-			.then(response => response.json())
-			.then(data => dispatch({ type: 'ADD_GITHUB_DATA', repositories: data }))
-			.catch(error => console.error(error))
+		axios.get(githubBaseUrl)
+			.then(data => dispatch({ type: 'ADD_GITHUB_DATA', repositories: data.data }))
 	}
 }
