@@ -58,7 +58,12 @@ linkedinIcon {
 }
 .nav-link:hover {
 	color: #00D2A9;
+	background-color: #FFD6A1 !important;
 	transition: .3s;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background-color: #FFD6A1 !important;
+	color: #00D2A3 !important;
 }
 /* Bio Css */
 .bio {
