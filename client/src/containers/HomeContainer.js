@@ -1,6 +1,5 @@
 import React from 'react'
-import Carousel from '../components/Carousel'
-import Bio from '../components/Bio'
+import { Bio, Carousel } from '../components'
 
 const HomeContainer = () => {
 	return (

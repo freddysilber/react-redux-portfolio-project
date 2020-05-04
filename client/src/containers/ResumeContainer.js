@@ -2,7 +2,7 @@ import React from 'react'
 import { Spinner } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { getJobListings } from '../actions/joblistingActions'
-import JobListings from '../components/JobListings/JobListings'
+import { JobListings } from '../components'
 
 class ResumeContainer extends React.Component {
 	componentDidMount() {

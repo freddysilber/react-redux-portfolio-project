@@ -1,8 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { AdminContainer, CovidContainer, HomeContainer, ResumeContainer, PorfolioProjectsContainer } from './containers'
-import Navigation from './components/Navigation'
-import Blog from './components/Blog'
+import { Navigation, Blog } from './components'
 
 export default class App extends React.Component {
   render() {

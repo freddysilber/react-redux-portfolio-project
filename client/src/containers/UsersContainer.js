@@ -1,10 +1,9 @@
 
 import React from 'react'
 import { Spinner } from 'react-bootstrap'
-import Users from '../components/Users/Users'
-import CreateUser from '../components/Users/CreateUser'
 import { connect } from 'react-redux'
 import { getUsers, createUser, deleteUser } from '../actions/userActions'
+import { Users, CreateUser } from '../components'
 
 class UsersContainer extends React.Component {
 	// Fetch all users when container mounts

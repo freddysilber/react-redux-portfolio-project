@@ -1,10 +1,7 @@
 import React from 'react'
-import CovidLatestTotals from '../components/Covid/CovidLatestTotals'
 import { connect } from 'react-redux'
 import { fetchCovidLatestTotals, fetchListOfCountries, fetchDataByCountry } from '../actions/covidActions'
-import CovidCountries from '../components/Covid/CovidCountries'
-import CountryData from '../components/Covid/CountryData'
-import CovidDataChart from '../components/Covid/CovidDataChart'
+import { CountryData, CovidCountries, CovidDataChart, CovidLatestTotals } from '../components'
 
 class CovidContainer extends React.Component {
 	componentDidMount() {

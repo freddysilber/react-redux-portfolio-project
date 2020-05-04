@@ -2,8 +2,7 @@ import React from 'react'
 import { Spinner } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { getJobListings, createJobListing, deleteJobListing } from '../actions/joblistingActions'
-import CreateJobListing from '../components/JobListings/CreateJobListing'
-import JobListings from '../components/JobListings/JobListings'
+import { CreateJobListing, JobListings } from '../components'
 
 class JobListingsContainer extends React.Component {
 	componentDidMount() {
