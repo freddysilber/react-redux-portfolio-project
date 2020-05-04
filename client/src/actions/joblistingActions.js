@@ -14,27 +14,13 @@ export const getJobListings = () => {
 export const createJobListing = (name, description, startDate, endDate) => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
-		fetch(joblistingsUrl, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({
-				'name': name,
-				'description': description,
-				'start_date': startDate,
-				'end_date': endDate
-			})
+		axios.post(joblistingsUrl, {
+			name: name,
+			description: description,
+			start_date: startDate,
+			end_date: endDate
 		})
-			.then(response => {
-				//if (!response.ok) {
-				//	throw new Error(response)
-				//}
-				return response.json()
-			})
-			.then(data => {
-				dispatch({ type: 'ADD_NEW_JOB_LISTING', jobListings: data })
-			})
+			.then(data => dispatch({ type: 'ADD_NEW_JOB_LISTING', jobListings: data.data }))
 			.catch(error => console.error('There was an error creating this job listing', error))
 	}
 }
@@ -43,20 +29,13 @@ export const createJobListing = (name, description, startDate, endDate) => {
 export const editJobListing = (jobListingId, name, description, startDate, endDate) => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
-		fetch(`${joblistingsUrl}/${jobListingId}`, {
-			method: 'PATCH',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({
-				'name': name,
-				'description': description,
-				'start_date': startDate,
-				'end_date': endDate
-			})
+		axios.patch(`${joblistingsUrl}/${jobListingId}`, {
+			name: name,
+			description: description,
+			start_date: startDate,
+			end_date: endDate
 		})
-			.then(response => response.json())
-			.then(data => dispatch({ type: 'ADD_NEW_JOB_LISTING', jobListings: data }))
+			.then(data => dispatch({ type: 'ADD_NEW_JOB_LISTING', jobListings: data.data }))
 			.catch(error => console.error('There was an error updating this job listing', error))
 	}
 }
@@ -64,9 +43,7 @@ export const editJobListing = (jobListingId, name, description, startDate, endDa
 export const deleteJobListing = jobListingId => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
-		fetch(`${joblistingsUrl}/${jobListingId}`, {
-			method: 'DELETE'
-		})
+		axios.delete(`${joblistingsUrl}/${jobListingId}`)
 			.then(() => dispatch({ type: 'REMOVE_JOB_LISTING', jobListingId }))
 			.catch(error => console.error(error))
 	}
