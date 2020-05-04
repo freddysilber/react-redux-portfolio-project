@@ -1,6 +1,5 @@
 import React from 'react'
-import UsersContainer from './UsersContainer'
-import JobListingsContainer from './JobListingsContainer'
+import { UsersContainer, JobListingsContainer } from '../containers'
 import { Tab, Row, Col, Nav } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faUsers } from '@fortawesome/free-solid-svg-icons'
