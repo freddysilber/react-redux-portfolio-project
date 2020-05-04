@@ -54,12 +54,10 @@ linkedinIcon {
 }
 .nav-link {
 	color: #FFD6A1;
-	text-decoration: none;
 	transition: .3s;
 }
 .nav-link:hover {
 	color: #00D2A9;
-	text-decoration: none;
 	transition: .3s;
 }
 /* Bio Css */

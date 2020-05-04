@@ -6,7 +6,7 @@ import { Nav } from 'react-bootstrap'
 
 const Navigation = () => {
 	return (
-		<Nav fill variant="tabs" defaultActiveKey="/">
+		<Nav fill variant="tabs" defaultActiveKey="/" activeKey={window.location.pathname}>
 			<Nav.Item>
 				<Nav.Link href="/" className="navLink"><FontAwesomeIcon icon={faHome} /></Nav.Link>
 			</Nav.Item>
