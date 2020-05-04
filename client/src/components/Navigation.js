@@ -1,19 +1,32 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faVirus, faCogs, faBriefcase, faBlog } from '@fortawesome/free-solid-svg-icons'
+import { Nav } from 'react-bootstrap'
 
 const Navigation = () => {
 	return (
-		<div className="navbar navigation">
-			<NavLink exact to='/' className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faHome} /></NavLink>
-			<NavLink to='/resume' className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faBriefcase} /></NavLink>
-			<NavLink to='/portfolioprojects' className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faGithub} /></NavLink>
-			<NavLink to='/covid19' className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faVirus} /></NavLink>
-			<NavLink to='/blog' className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faBlog} /></NavLink>
-			<NavLink to='/admin' className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faCogs} /></NavLink>
-		</div>
+		<Nav fill variant="tabs" defaultActiveKey="/">
+			<Nav.Item>
+				<Nav.Link href="/" className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faHome} /></Nav.Link>
+			</Nav.Item>
+			<Nav.Item>
+				<Nav.Link href="/resume" className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faBriefcase} /></Nav.Link>
+			</Nav.Item>
+			<Nav.Item>
+				<Nav.Link href="/portfolioprojects" className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faGithub} /></Nav.Link>
+			</Nav.Item>
+			<Nav.Item>
+				<Nav.Link href="/covid19" className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faVirus} /></Nav.Link>
+			</Nav.Item>
+			<Nav.Item>
+				<Nav.Link href="/blog" className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faBlog} /></Nav.Link>
+			</Nav.Item>
+			<Nav.Item>
+				<Nav.Link href="/admin" className="navLink" activeStyle={{ color: '#00D2A9', fontWeight: 'bold', textDecoration: 'underline' }}><FontAwesomeIcon icon={faCogs} /></Nav.Link>
+			</Nav.Item>
+		</Nav>
 	)
 }
 

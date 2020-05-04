@@ -48,7 +48,7 @@ linkedinIcon {
 	  color: #FF0000;
 }
 /* Navigation Css */
-.navigation {
+.nav {
 	background-color: #32373B;
 	font-family: BalooTamma2;
 }
@@ -62,14 +62,14 @@ linkedinIcon {
 	text-decoration: none;
 	transition: .3s;
 }
-.nav-link {
+/* .nav-link {
 	background-color: #32373B;
 	color:#FFD6A1;
 	transition: .3s;
 }
 .nav-link.active {
 	background-color: #5C534D !important;
-}
+} */
 /* Bio Css */
 .bio {
 	margin: 0rem 1rem;
