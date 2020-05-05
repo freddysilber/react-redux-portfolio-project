@@ -12,3 +12,6 @@
 /tmp
 tmp
 log
+
+# Ignore Firebase hosting debug log
+firebase-debug.log
