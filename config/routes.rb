@@ -1,17 +1,14 @@
 Rails.application.routes.draw do
-  # scope '/api' do
-  #   resources :users
-  #   resources :joblistings
-  # end
 
   namespace :api do
     namespace :v1 do
       resources :users
-      resource :joblistings
+      resources :joblistings
     end
   end
+  
 end
-
+# todo: set up user auth
 # resources :users, param: :_id
 # resources :users, param: :_username
 # post '/auth/login', to: 'authentication#login'

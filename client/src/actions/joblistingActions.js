@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const joblistingsUrl = '/api/v1/joblistings'
+const joblistingsUrl = 'api/v1/joblistings'
 // Gets all the job listings from the database
 export const getJobListings = () => {
 	return dispatch => {
