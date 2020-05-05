@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const usersUrl = 'api/users'
+const usersUrl = 'api/v1/users'
 // Gets all users from the database
 export const getUsers = () => {
 	return dispatch => {

@@ -1,4 +1,4 @@
-class JoblistingsController < ApplicationController
+class Api::V1::JoblistingsController < ApplicationController
 	def index
 		joblistings = Joblisting.all
 		render json: JoblistingSerializer.new(joblistings)

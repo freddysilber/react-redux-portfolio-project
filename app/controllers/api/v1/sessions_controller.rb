@@ -1,4 +1,4 @@
-class SessionsController < ApplicationController
+class Api::V1::SessionsController < ApplicationController
 	def new
 		raise 'New session'
 	end
