@@ -15,3 +15,5 @@ log
 
 # Ignore Firebase hosting debug log
 firebase-debug.log
+
+node_modules

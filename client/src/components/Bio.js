@@ -12,6 +12,7 @@ const Bio = () => {
 				<Image src={cloudcoach} rounded height="400" />
 				<SocialMediaIcons />
 				<div className="bio">
+					<h1>test</h1>
 					<h4>Hello and welcome to my portfolio site!</h4>
 					<p>
 						My Name is Freddy Silber and I am a full stack web developer.
