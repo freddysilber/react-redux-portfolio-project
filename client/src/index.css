@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'DramaSans';
+  src: local('DramaSans'), url(./fonts/DramaSans.ttf) format('truetype')
+}
+@font-face {
+	font-family: 'BalooTamma2';
+	src: local('BalooTamma2-Regular'),url(./fonts/BalooTamma2-Regular.ttf) format('truetype');
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'DramaSans', 'BalooTamma2', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+i {
+	padding: 1rem 0rem;
+	transition: .3s;
+}
+i:hover {
+	opacity: .7;
+	transition: .3s;
+	transform: scale(1.3);
+}
+/* Font awesome icon colors (social media icons) using branding colors for the icons */
+.socialMediaIconList {
+  	margin: auto;
+}
+.twitterIcon {
+  	color: #1DA1F2;
+}
+.facebookIcon {
+  	color: #4267B2;
+}
+.instagramIcon {
+  	color: #C13584;
+}
+.githubIcon {
+ 	 color: white
+}
+linkedinIcon {
+	  color: #2867B2;
+}
+.youtubeIcon {
+	  color: #FF0000;
+}
+/* Navigation Css */
+.nav {
+	background-color: #32373B;
+	font-family: BalooTamma2;
+}
+.nav-link {
+	color: #FFD6A1;
+	transition: .3s;
+}
+.nav-link:hover {
+	color: #00D2A9;
+	background-color: #FFD6A1 !important;
+	transition: .3s;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background-color: #FFD6A1 !important;
+	color: #00D2A3 !important;
+}
+/* Bio Css */
+.bio {
+	margin: 0rem 1rem;
+}
+.bio > p {
+	color: #FB8237;
+}
+.bio > h4 {
+	color: #00D2A3;
+}
+p, h4 {
+	color: #32373B;
+}
+h4 {
+	font-weight: bolder;
+}
+.content {
+	display: flex;
+	/* font-family: DramaSans; */
+	font-family: BalooTamma2;
+}
+.cloudCoachAnchor {
+	color: #FF6200;
+}
+.jumboTron {
+	background: #323C39 !important;
+	margin-bottom: 0 !important;
+	padding: 1.5rem !important;
+}
+/* Carousel Css */
+.carouselContainer {
+	font-family: BalooTamma2;
+}
+.carouselDescription {
+	color: white;
+}
+/* Centers spinner */
+.spinnerContainer {
+	top: 50%;
+	left: 50%;
+	position: fixed;
+}
+/* Respository List Css */
+.card {
+	margin: .25rem !important;
+	background: #90BDDC !important;	
+}
+.cardLink, .card-title {
+	color: #FF6200 !important;
+	transition: .3s;
+}
+.cardLink:hover{
+	text-decoration: underline !important;
+	color: #FB8237 !important;
+	transition: .3s;
+}
+/* Tabs */
+.tab-content {
+	padding: 1rem;
+}
+/* Form Css */
+.createUserForm {
+	border: 1px solid #0A7FD2;
+	border-radius: 10px;
+	padding: .5rem;
+	margin: .5rem;
+}
+/* Covid Css */
+.latestTotalsCard, .countryCard {
+	background: white !important;
+}
+.card-header {
+	background: #FFD6A1 !important;
+}
+/* Dropdown */
+.dropdown {
+	padding: .25rem !important;
+	float: right;
+}
+.dropdown-menu {
+	max-height: 85vh;
+	overflow: scroll;
+}
