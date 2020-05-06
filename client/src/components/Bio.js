@@ -4,11 +4,11 @@ import { Jumbotron, Image } from 'react-bootstrap'
 import cloudcoach from '../pictures/cloudcoach.jpg'
 
 const Bio = () => {
-	const cloudcoachurl = () => <a href="https://cloudcoach.com/" target="_blank" rel="noopener noreferrer" className="cloudCoachAnchor">Cloud Coach</a>
-	const fraserUrl = () => <a href='https://frasercolorado.com/' target='_blank' rel='noopener noreferrer' className='cloudCoachAnchor'>Fraser</a>
-	const winterParkResortUrl = () => <a href='https://www.winterparkresort.com/' target='_blank' rel='noopener noreferrer' className='cloudCoachAnchor'>Winter Park Resort</a>
-	const middleParkHighSchool = () => <a href='http://mphs.egsd.org/' target='_blank' rel='noopener noreferrer' className='cloudCoachAnchor'>Middle Park High School</a>
-	const salesforceUrl = () => <a href='https://www.salesforce.com/' target='_blank' rel='noopener noreferrer' className='cloudCoachAnchor'>Salesforce</a>
+	const cloudcoachurl = () => <a href="https://cloudcoach.com/" target="_blank" rel="noopener noreferrer" className="bioAnchor">Cloud Coach</a>
+	const fraserUrl = () => <a href='https://frasercolorado.com/' target='_blank' rel='noopener noreferrer' className='bioAnchor'>Fraser</a>
+	const winterParkResortUrl = () => <a href='https://www.winterparkresort.com/' target='_blank' rel='noopener noreferrer' className='bioAnchor'>Winter Park Resort</a>
+	const middleParkHighSchool = () => <a href='http://mphs.egsd.org/' target='_blank' rel='noopener noreferrer' className='bioAnchor'>Middle Park High School</a>
+	const salesforceUrl = () => <a href='https://www.salesforce.com/' target='_blank' rel='noopener noreferrer' className='bioAnchor'>Salesforce</a>
 
 	return (
 		<Jumbotron fluid className="jumboTron">
