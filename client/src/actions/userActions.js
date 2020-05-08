@@ -27,7 +27,7 @@ export const createUser = (username, email, password) => {
 export const deleteUser = userId => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
-		axios.delete(`${usersUrl}/${userId}`)
+		axios.delete(usersUrl + '/' + userId)
 			.then(() => dispatch({ type: 'REMOVE_USER', userId }))
 			.catch(error => console.error(error))
 	}

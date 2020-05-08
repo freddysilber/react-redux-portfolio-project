@@ -24,12 +24,11 @@ export const createJobListing = (name, description, startDate, endDate) => {
 			.catch(error => console.error('There was an error creating this job listing', error))
 	}
 }
-
 // Edits the selected job listing with the new params
 export const editJobListing = (jobListingId, name, description, startDate, endDate) => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
-		axios.patch(`${joblistingsUrl}/${jobListingId}`, {
+		axios.patch(joblistingsUrl + '/' + jobListingId, {
 			name: name,
 			description: description,
 			start_date: startDate,
@@ -43,7 +42,7 @@ export const editJobListing = (jobListingId, name, description, startDate, endDa
 export const deleteJobListing = jobListingId => {
 	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
-		axios.delete(`${joblistingsUrl}/${jobListingId}`)
+		axios.delete(joblistingsUrl + '/' + jobListingId)
 			.then(() => dispatch({ type: 'REMOVE_JOB_LISTING', jobListingId }))
 			.catch(error => console.error(error))
 	}

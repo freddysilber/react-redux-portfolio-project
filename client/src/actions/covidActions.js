@@ -2,7 +2,7 @@ import { rapidApiHost, covid19Key, covid19Api } from '../data/covidData'
 import axios from 'axios'
 
 export const fetchCovidLatestTotals = () => {
-	return (dispatch) => {
+	return dispatch => {
 		dispatch({ type: 'LOADING_DATA' })
 		axios.get(covid19Api.getLatestTotals, {
 			method: 'GET',
