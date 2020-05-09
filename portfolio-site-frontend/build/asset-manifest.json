@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a48ca8ed.chunk.css",
+    "main.js": "/static/js/main.193cce20.chunk.js",
+    "main.js.map": "/static/js/main.193cce20.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.784c586e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.784c586e.js.map",
+    "static/css/2.9e7b09f4.chunk.css": "/static/css/2.9e7b09f4.chunk.css",
+    "static/js/2.12b2656a.chunk.js": "/static/js/2.12b2656a.chunk.js",
+    "static/js/2.12b2656a.chunk.js.map": "/static/js/2.12b2656a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4213b42299e7b3bec68a1218762dcf97.js": "/precache-manifest.4213b42299e7b3bec68a1218762dcf97.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.9e7b09f4.chunk.css.map": "/static/css/2.9e7b09f4.chunk.css.map",
+    "static/css/main.a48ca8ed.chunk.css.map": "/static/css/main.a48ca8ed.chunk.css.map",
+    "static/js/2.12b2656a.chunk.js.LICENSE.txt": "/static/js/2.12b2656a.chunk.js.LICENSE.txt",
+    "static/media/BalooTamma2-Regular.ttf": "/static/media/BalooTamma2-Regular.05aa77b1.ttf",
+    "static/media/DramaSans.ttf": "/static/media/DramaSans.53d54327.ttf",
+    "static/media/cloudcoach.jpg": "/static/media/cloudcoach.a5d23e1a.jpg",
+    "static/media/crestedButte.jpeg": "/static/media/crestedButte.7efe77f5.jpeg",
+    "static/media/londonTower.jpeg": "/static/media/londonTower.a3a728cc.jpeg",
+    "static/media/squareTopLakes.jpeg": "/static/media/squareTopLakes.5781ffbc.jpeg",
+    "static/media/sunset.jpeg": "/static/media/sunset.e57a824a.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.784c586e.js",
+    "static/css/2.9e7b09f4.chunk.css",
+    "static/js/2.12b2656a.chunk.js",
+    "static/css/main.a48ca8ed.chunk.css",
+    "static/js/main.193cce20.chunk.js"
+  ]
+}
