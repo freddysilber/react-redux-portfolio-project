@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'DramaSans';
-  src: local('DramaSans'), url(./fonts/DramaSans.ttf) format('truetype')
+	font-family: 'DramaSans';
+	src: local('DramaSans'), url(./fonts/DramaSans.ttf) format('truetype')
 }
 @font-face {
 	font-family: 'BalooTamma2';
 	src: local('BalooTamma2-Regular'),url(./fonts/BalooTamma2-Regular.ttf) format('truetype');
 }
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'DramaSans', 'BalooTamma2', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'DramaSans', 'BalooTamma2', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	monospace;
 }
 i {
 	padding: 1rem 0rem;
@@ -27,7 +27,8 @@ i:hover {
 }
 /* Font awesome icon colors (social media icons) using branding colors for the icons */
 .socialMediaIconList {
-  	margin: auto;
+	  margin: auto;
+	  max-width: min-content;
 }
 .twitterIcon {
   	color: #1DA1F2;
@@ -41,7 +42,7 @@ i:hover {
 .githubIcon {
  	 color: white
 }
-linkedinIcon {
+.linkedinIcon {
 	  color: #2867B2;
 }
 .youtubeIcon {
@@ -89,10 +90,8 @@ h4 {
 .bioAnchor {
 	color: #FF6200;
 }
-.jumboTron {
+.jumbotron {
 	background: #323C39 !important;
-	margin-bottom: 0 !important;
-	padding: 1.5rem !important;
 }
 /* Carousel Css */
 .carouselContainer {
