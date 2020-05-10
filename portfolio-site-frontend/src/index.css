@@ -91,6 +91,7 @@ h4 {
 	color: #FF6200;
 }
 .jumbotron {
+	padding: 1rem !important;
 	background: #323C39 !important;
 }
 /* Carousel Css */
