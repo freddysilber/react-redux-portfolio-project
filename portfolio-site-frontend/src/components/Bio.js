@@ -1,6 +1,5 @@
 import React from 'react'
 import SocialMediaIcons from './SocialMediaIcons'
-import WeeklyBanner from './WeeklyBanner'
 import { Jumbotron, Image } from 'react-bootstrap'
 import cloudcoach from '../pictures/cloudcoach.jpg'
 
@@ -13,7 +12,6 @@ const Bio = () => {
 
 	return (
 		<>
-			<WeeklyBanner />
 			<Jumbotron fluid>
 				<div className="content">
 					<Image src={cloudcoach} rounded height="400" />
@@ -27,7 +25,7 @@ const Bio = () => {
 						</p>
 						<p>
 							I started snowboarding when I was 4 years old and would average almost 100 days a season snowboarding at my local ski area, {winterParkResortUrl()}.
-							I graduated {middleParkHighSchool()} in Granby Colorado with the class of 2017. During school, I would often find myself nerding out in our computer lab
+							I graduated {middleParkHighSchool()} in Granby Colorado and during school, I would often find myself nerding out in our computer lab
 							with some of my friends. We would do all kinds of things from creating claymation films, 3D printing, programming 3D printers, video games, and our attemps to hack other computer programs.
 						</p>
 						<p>
