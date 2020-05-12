@@ -1,10 +1,10 @@
-# Portfolio Site
+# React Redux Portfolio Project
 ## By Freddy Silber
 
 ### Demo Video: https://www.youtube.com/watch?v=Wg42yMQ6dxI
 
 ## What:
-- My personal portfolio site to host information about me, my projects, skills, and current interests
+- A personal portfolio site built with React and Rails API to host information about me, my projects, skills, and current interests
 
 ## Getting Started:
 1. Run ```npm i``` to install dependencies
