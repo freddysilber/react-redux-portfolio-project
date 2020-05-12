@@ -1,1 +1,6 @@
 node_modules
+build
+# Firebase stuff
+.firebase
+.firebase.json
+.firebaserc
