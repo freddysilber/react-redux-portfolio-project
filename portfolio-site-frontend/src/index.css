@@ -148,3 +148,12 @@ h4 {
 	max-height: 85vh;
 	overflow: scroll;
 }
+.headerContainer {
+	background: #32373B;
+	color: #FF6200;
+	font-family: 'DramaSans';
+}
+.headerContainer > h1 {
+	text-align: center;
+	margin: 0rem;
+}

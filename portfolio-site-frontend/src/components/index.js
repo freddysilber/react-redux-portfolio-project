@@ -13,6 +13,7 @@ export { default as CreateUser } from './Users/CreateUser'
 export { default as User } from './Users/User'
 export { default as Users } from './Users/Users'
 // General components
+export { default as Header } from './Header'
 export { default as Bio } from './Bio'
 export { default as Blog } from './Blog'
 export { default as Carousel } from './Carousel'

@@ -1,9 +1,10 @@
 import React from 'react'
-import { Bio, Carousel } from '../components'
+import { Bio, Carousel, Header } from '../components'
 
 const HomeContainer = () => {
 	return (
 		<>
+			<Header />
 			<Carousel />
 			<Bio />
 		</>
