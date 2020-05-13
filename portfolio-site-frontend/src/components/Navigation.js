@@ -6,7 +6,7 @@ import Octicon, { Repo, LogoGithub } from '@primer/octicons-react'
 
 const Navigation = () => {
 	return (
-		<Nav fill variant="pills" defaultActiveKey="/" activeKey={window.location.pathname}>
+		<Nav fill variant="tabs" defaultActiveKey="/" activeKey={window.location.pathname}>
 			<Nav.Item>
 				<Nav.Link href="/" className="navLink"><FontAwesomeIcon icon={faHome} /> Home</Nav.Link>
 			</Nav.Item>
