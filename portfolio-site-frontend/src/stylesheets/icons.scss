@@ -1,6 +1,8 @@
-i {
+// only apply margin to devicons (programming language icons)
+i[class*='devicon'] {
 	margin: 1rem;
 }
+//  only vertially align the repo icon svg
 svg.octicon {
 	vertical-align: middle !important;
 }
