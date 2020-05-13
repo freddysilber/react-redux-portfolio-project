@@ -10,7 +10,7 @@ export default class AdminContainer extends React.Component {
 			<Tab.Container defaultActiveKey="users">
 				<Row>
 					<Col xs={1}>
-						<Nav variant="pills" className="flex-column">
+						<Nav variant="tabs" className="flex-column">
 							<Nav.Item>
 								<Nav.Link eventKey="users"><FontAwesomeIcon icon={faUsers} /></Nav.Link>
 							</Nav.Item>
